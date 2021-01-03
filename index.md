@@ -1,3 +1,14 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QN8MV7J55J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QN8MV7J55J');
+</script>
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/ericjang/aibook/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
