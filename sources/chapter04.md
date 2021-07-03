@@ -5,24 +5,47 @@ link-citations: true
 reference-section-title: References
 ---
 
-A human being should be able to change a diaper, plan an invasion, butcher a hog, conn a ship, design a building, write a sonnet, balance accounts, build a wall, set a bone, comfort the dying, take orders, give orders, cooperate, act alone, solve equations, analyse a new problem, pitch manure, program a computer, cook a tasty meal, fight efficiently, die gallantly. Specialization is for insects.
+*A human being should be able to change a diaper, plan an invasion, butcher a hog, conn a ship, design a building, write a sonnet, balance accounts, build a wall, set a bone, comfort the dying, take orders, give orders, cooperate, act alone, solve equations, analyse a new problem, pitch manure, program a computer, cook a tasty meal, fight efficiently, die gallantly. Specialization is for insects.*
  — Robert Heinlein, Time Enough for Love
 
 In chapter 2, I discussed how Software 2.0 is a powerful paradigm for creating programs that we don’t know how to articulate precisely in hand-written code. All you need is a large dataset of inputs and target predictions, a lot of computational power to “compile” the data into a function approximator, and some R&D elbow grease to “make it work”. Elbow grease might be a bit of an understatement, but on the whole I am confident ML technology will have a much larger role to play in the future of software.  
 
-Looking to the long-term goals of AI research though, there remains the long-standing puzzle of how to actually build Artificial General Intelligence. Our Narrow AI systems -- often built using Software 2.0 -- can learn complex behaviors that no human can hard-code on their own - even ones previously thought to require human level intelligence, but they are far from possessing all the general faculties of human intelligence. As Heinlein’s quote at the beginning of this chapter alludes to, our ML systems are still so specialized that they are more insect-like than human. 
+Looking to the long-term goals of AI research though, there remains the long-standing puzzle of how to actually build Artificial General Intelligence. Our Narrow AI systems -- often built using Software 2.0 -- can learn complex behaviors that no human can hard-code on their own, and perform tasks that were once thought to require a human intellect. However, the simulacrum of *some* intellect is a far cry from possessing all the general faculties of human intelligence. As Heinlein’s quote at the beginning of this chapter alludes to, our ML systems are still so specialized that they are more insect-like than human. 
 
 It is not obvious at first why we would want software systems to have the general capabilities of humans. What business does a system that performs credit card fraud detection have with knowing what a cow looks like? Doesn’t a cancer-detecting computer vision system just need to do one job well? Maybe, but human judgement acts as a security layer to deal with the edge cases of reality. It’s why we still require human pilots in the cockpit of airplanes, because even though the plane can take off and land itself most of the time, we know that a human can intervene and take in information the autopilot has no way of knowing or understanding.
 
-Here are some concrete examples: an ML model that performs accurate credit card fraud detection cannot explain to a child the concept of credit fraud, nor can it automatically adapt to the changing cybercrime landscape, nor can it reason about the motivations of fraudsters or reason about a new attack vector from first principles.
+An example from real-world applications: a ML model that performs credit card fraud detection with 99% accuracy still cannot explain to a child the basic concepts of credit fraud, nor can it automatically adapt to the changing cybercrime landscape, nor can it reason about the motivations of fraudsters or reason about a new attack vector from first principles.
 
-In medical imaging - AI systems are now on par with the best human radiologists when it comes to diagnosing breast cancer. However, replicating the cancer-diagnosing capabilities of a doctor is an entirely different problem than reproducing the doctor herself. 
+In medical imaging - AI systems are now on par with the best human radiologists when it comes to diagnosing breast cancer. However, replicating the cancer-diagnosing capabilities of a radiologist are an entirely different problem than reproducing the doctor herself. The doctor does so much more than just classify images -  If you show a picture of a tree to a radiologist and ask them whether the picture contains breast cancer, they will tell you “I can’t diagnose the patient because you are showing me a picture of a tree. Is this some kind of mistake?”.
 
-The specialized systems we build lack human judgement - all the common sense your average human possesses beyond their job-specific functions. If you show a picture of a tree to a radiologist and ask them whether the picture contains breast cancer, they will tell you “I can’t diagnose the patient because you are showing me a picture of a tree. Is this some kind of mistake?”. In contrast, most ML models today would readily give you a prediction without realizing that the inputs are anomalous. It might even mistake the tree for a rare, aggressive tumor, with high confidence.
+In contrast, most ML models today would readily give you a prediction without realizing that the inputs are anomalous. It might even mistake the tree for a rare, aggressive tumor, with high confidence. The specialized systems we build lack human judgement and surrounding contextual knowledge about the task - all the common sense your average human possesses beyond their job-specific functions. 
 
-That is why automated call center voice menus are so frustrating and that people often just want to speak with a representative immediately. A human doctor can relate to a patient who is apprehensive about needles, and can understand the narrative of another patient whose job-related stress is inducing health problems, and use that to deduce the right treatments.
 
-Absorbing the World’s Data
+<!-- That is why automated call center voice menus are so frustrating and that people often just want to speak with a representative immediately. A human doctor can relate to a patient who is apprehensive about needles, and can understand the narrative of another patient whose job-related stress is inducing health problems, and use that to deduce the right treatments. -->
+
+## Why do the goalposts keep shifting?
+
+Sure, arguing that a credit fraud detection system needs to be able to explain the concept of credit to a child is shifting the goalposts a lot. But goalposts are shifted constantly because in pushing the frontier of our AI systems' capabilities, we have always consistently found that intelligence tasks are a bit deeper than we previous thought. It's like zooming into a fractal - each time you think you've fully broken down the problem into smaller pieces, you find that the small pieces have vast complexity of their own. 
+
+
+"fractal complexity" of solving intelligence tasks.
+
+
+## Sequential Behavior
+
+A long-standing problem in ML training is the fact that ML systems must present data in a randomly sampled, i.i.d order. 
+
+
+From an optimization standpoint, presenting such a large bias in the presentation of data means that you need to make the optimization process essentially be invariant to the order with which you present it data. This is hard from a design standpoint.
+
+
+
+Sequential behavior is a form of deep generalization - we interact with an object, it presents us with new information about that specific context, we must reason about it and incorporate it into our *existing* world views.
+
+
+
+
+## Absorbing the World’s Data
 
 How can we imbue our AI systems with more “common sense”? A radiologist’s learned experience and human judgement comes from far more than the X-Rays she’s studied. She had a childhood and learned common sense knowledge and a variety of other important medical knowledge in school. Perhaps we can show our AI radiologist images of trees and frogs and everything else under the sky, so that it understands when we are accidentally giving it non-MRI images.
 
@@ -82,6 +105,18 @@ If we have a loss term that encourages the model to be “empathetic”, how do 
 At the end of the day, Software 2.0 requires an optimization objective. What is an objective that leads to an AGI? 
 
 Artificial Intelligence research today largely focuses on thinking about high level capabilities that are useful to humanity - how we achieve value alignment with humans, artificial creativity, innate curiosity, assisting the elderly, forecasting the future, learning efficiently. However, these are all pieces of the final system that we want - there is little discussion today on how we go about integrating all these ideas into a single, cohesive entity that is capable of expressing all these capabilities at once.  
+
+
+
+
+
+## The importance of interaction
+
+When we learn to code, it's not sufficient just to watch a bunch of youtube videos about programming. We must do it ourselves, get stuck, overcome new surprises to uncover what we don't know we don't know.
+
+
+
+
 
 
 In the following chapters, we will lay out an outline for how we might integrate all these capabilities together.

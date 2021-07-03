@@ -1,6 +1,6 @@
 --- 
-title: Robot People 
-subtitle: A Roadmap to Artificial Survival Intelligence
+title: Artificial Survival 
+subtitle: An Ethological Approach to Artificial General Intelligence
 author: Eric Jang
 toc: false
 ...

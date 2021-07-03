@@ -7,10 +7,11 @@ reference-section-title: References
 
 Todo: change this software to focus on Software 2.0 programming paradigm
 
-Emphasize that Recent Breakthroughs in AI is nothing more than using automated search to find good programs given data.
+Emphasize that Recent Breakthroughs in AI is nothing more than using automated search to find good programs given data and measurements.
 Borrow text from https://blog.evjang.com/2021/03/learning-robots.html 
 
-Early AI systems were based on the premise of performing search to make good decisions. A robot searches over path plans to figure out how to solve a maze. A chess playing software searches over board states for actions most likely to lead to victory. The program is a hard-coded search procedure that considers possibilities at deployment time.
+Early AI systems were based on the premise of performing search to make good decisions. A robot searches over path plans to figure out how to solve a maze. A chess playing software searches over board states for actions most likely to lead to victory. 
+The program is a hard-coded search procedure that considers possibilities at deployment time.
 
 What if instead of hard-coding the program, we used another level of search to find the best program? We take a guess as to what a good program might be, and then try it out, and use that experience to guide our “program search” for what program to try next.
 

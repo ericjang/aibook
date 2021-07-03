@@ -7,11 +7,11 @@ reference-section-title: References
 
 Artificial Intelligence, or A.I. for short, means so many different things to different audiences, that nearly every book on AI begins with the author's personal definition of it. Let me begin with my own. 
 
-Artificial Intelligence relates to *scientific fields* that study how intelligence works, combined with engineering disciplines *to replicate those intelligent capabilities*. It's an aspirational name for the field - Much like how cancer researchers have not yet cured cancer yet, AI researchers are well aware of the fact that we are nowhere close to building a machine with human-level intelligence. In fact, we understand the human-level intelligence even less than oncologists understand cancer.
+Artificial Intelligence is a broad umbrella terms for the *scientific fields* that study how intelligence works, combined with engineering disciplines *to replicate those intelligent capabilities*. It's very much an aspirational name for the field. Much like how cancer researchers have not yet cured cancer yet, AI researchers are well aware of the fact that we are nowhere close to building a machine with human-level intelligence. In fact, we understand the human-level intelligence even less than oncologists understand cancer. 
 
-Most laypeople probably understand that “AI” is vaguely about “computers doing smart stuff”. What constitutes “smart stuff” is highly dependent on who you talk to. I consider software that recommends you a TV show you're likely to enjoy is pretty smart. I think a word processor that knows when you are using proper nouns versus making a spelling mistake is also pretty smart. Of course, what impresses people is inherently a moving goalpost. To quote a tongue-in-cheek definition by Larry Tesler: “Artificial intelligence is whatever hasn't been done yet.”
+AI research draws ideas from computer science, neuroscience, philosophy, operations research, physics, philosophy, ecology, sociology, just to name a few areas that have inspired people seeking to replicate intelligence. But to put it bluntly, “AI” is vaguely about “computers doing smart stuff”. What constitutes “smart stuff” is highly dependent on who you talk to, and it tends to be a moving goalpost as computers have automated plenty of human tasks without yet becoming conscious themselves. To quote a tongue-in-cheek definition by Larry Tesler: “Artificial intelligence is whatever hasn't been done yet.”
 
-Some experts think that the term "AI" should be abandoned altogether because its broad scope confuses and scares the public, and would prefer to refer to technology with more technically precise terms like "recommender systems", "Naive Bayes", and "linear regression". I don't share this view - revealing the methodology of a particular system does not reveal the impressiveness of the task. For instance, a neural network can be used to perform a simple forecast of housing prices based on square footage. A larger neural network can be used to best the human champion at Go. We might be able to do either of these without neural networks. If an external observer can't tell, then does it make sense to describe the system as what's happening under the hood? I'd argue that the term "Artificial Intelligence" is sufficient.
+Some experts think that the term "AI" should be abandoned altogether, because its broad scope and connotations of being "just as good as human intelligence" confuses and scares the public. Some would prefer to refer to the technology with more technically precise terms like "recommender systems", "Naive Bayes classifier", and "linear regression". I don't share this view, because the methodology of a particular system says nothing about the capabilities of the system. For instance, a neural network can be used to perform a simple forecast of housing prices based on square footage. A larger neural network can be used to best the human champion at Go. We might be able to do either of these tasks without neural networks. If an external observer can't tell, then does it make sense to describe the system as what's happening under the hood? The term "Artificial Intelligence" captures the right aspirational goal - we seek to understand our own intelligence and replicate it in software.
 
 
 # Software Today
@@ -25,8 +25,8 @@ Some experts think that the term "AI" should be abandoned altogether because its
 
  -->
 Many investors and business leaders buy into sensationalist narratives that AI is a quasi-magical software that can automate nearly anything. This is not because they are intentionally peddling snake oil, but because they simply lack the technical expertise to decide what kinds of software operations are “simple” and which ones are “advanced”.
-
-Software systems today can play Go better than humans, diagnose breast cancer better than most human radiologists, transcribe our voice clips to text, manage air traffic congestion, and handle the back-office paperwork for employee vacation hours. What is AI, and what isn’t? 
+<!-- 
+Software systems today can play Go better than humans, diagnose breast cancer better than most human radiologists, transcribe our voice clips to text, manage air traffic congestion, and handle the back-office paperwork for employee vacation hours. -->
 
 I’d like to relay a personal story that highlights these risks. A friend of mine has parents who run a successful online SAT prep school in the USA. They incorporated web technology into their business in the early 2000s, and investing in this up-and-coming technology paid off well for them. Owing to this success, they were keen on staying up to date with newer technological fads like “AI” and “Blockchain”. I met them for tea one afternoon in San Francisco, where they regaled me with their grand vision of using AI to generate test questions and adapt to changing Collegeboard formats and giving each student a customized learning curriculum.  
 
@@ -37,11 +37,10 @@ I gave them a few examples of technical hurdles that only someone deep in the we
 - Current AI technology can be trained to generate plausible-sounding questions on their own, or plausible-sounding answer choices on their own. But no technology exists to line up “plausible questions” with “plausible answers” and “plausible false answers”. 
 - When “re-writing” a question, do the transformations incorporate additional common-sense knowledge of the world? What does common sense even mean in the standardized testing context? 
 
-A simple task that any native English speaker could do - migrating SAT questions to comply with a new set of standards - abounds with hidden complexity when we try to replicate it in software and really write down all the steps a human would need to do to handle the task. I told my friend’s parents that even if they spent millions of dollars in R&D, and hired the strongest team of researchers to build a system for studying this problem, it would be highly uncertain whether the task could be solved to an adequate degree in 2-5 years.
+A simple task that any native English speaker could do - migrating SAT questions to comply with a new set of standards - abounds with hidden complexity when we try to replicate it in software and really write down all the instructions a human would need to do to handle the task. I told my friend’s parents that even if they spent millions of dollars in R&D, and hired the strongest team of researchers to build a system for studying this problem, it would be highly uncertain whether the task could be solved to an adequate degree in 2-5 years.
 
-The hidden complexity of everyday intelligence in the real world will be a recurring theme in this book.
+What initially seems as a straightforward problem around test question generation actually abounds with edge cases. This "hidden complexity of everyday intelligence" will be a recurring theme in this book.
 
- 
 # AI and the Media 
 
 The modern media industry makes their money from advertising, whose revenues are based on how many eyeballs are looking at their webpages. Driven by these incentives, journalists craft sensationalist headlines about technology to provoke emotional responses. This has the unintended consequence of exacerbating the public’s misunderstanding about the how and what of AI. Consider the following headlines about recent research:
@@ -64,7 +63,9 @@ However, the use of the term “Artificial Intelligence solves” gives the head
 These headlines, in which all expert nuance is discarded for mass consumption - highlight the reality that public science education is woefully inadequate for understanding modern technology and mathematics. This is not unique to AI - we see this happen often in quantum physics (Does Quantum Physics Support Buddhism?), biotechnology research (Stem Cells Reverse Aging). There are publications (Quanta Magazine) that attempt to bridge the knowledge gap between the experts and the public and bring a more accurate representation of science to mainstream, but by and large the public does not understand the limitations of computer technology and modern AI research.
 
 
-# A Critique of the Rationalist AI Community
+# On Rationalists
+
+<!-- TODO: this comes across as too hostile-->
 
 Fanned by the flames of media sensationalism, there is a surprisingly large community of pseudo-intellectuals and “AI philosophers” who will make wild extrapolations on the capabilities of AI systems. The basic argument is based on two assumptions:
 
@@ -73,11 +74,13 @@ Fanned by the flames of media sensationalism, there is a surprisingly large comm
 
 Once an AI system reaches human-level intelligence, it would be able to design and improve itself at least as well as humans can, but is now unfettered from the limits of human biology so it will exponentially increase in capability and humans will lose control of the technology. The exponential growth reaches a near-vertical slope, intelligence explodes, and this event is known as “AI Singularity”. 
 
-Some philosophers like Nick Bostrom argue that the potential future danger of a God-like “Superintelligence” is so vast that from an expected-value perspective, we should be investing a large amount of philanthropic work on mitigating risks associated with Superintelligence. 
+Some philosophers like Nick Bostrom argue that the potential future danger of a God-like “Superintelligence” is so vast that from an expected-value perspective, we should be investing a large amount of philanthropic work on mitigating risks associated with Superintelligence. A outcome that these futurists take rather seriously would be that such a “superintelligence” will become so powerful that mispecifying the objective “make paper clips efficiently” will result in all living organisms being harvested for the iron in their blood as the runaway AI turns the entire solar system into paper clips. This situation sounds absurd, but even if the probabilities are small, the superintelligence crowd believes that when multiplied by the near-infinite human suffering of this outcome, the resulting expected-value calculation is still greater than any other humanitarian issue worth working on.
 
-A outcome that these futurists take rather seriously would be that such a “superintelligence” will become so powerful that mispecifying the objective “make paper clips efficiently” will result in all living organisms being harvested for the iron in their blood as the runaway AI turns the entire solar system into paper clips. It’s no coincidence that the set of people who think that AI safety tend to be the most privileged, ivory-tower types of society, who seldom think of more wordly issues that technology brings to society. It’s also no coincidence that these people spend the most of the time talking and the least amount of time doing the actual work like experimental design and engineering.
+It’s no coincidence that the set of people who think that AI safety tend to be the most privileged, ivory-tower types of society, who seldom think of more wordly issues that technology brings to society. It’s also no coincidence that these people spend a lot of time doing policy writing rather than writing code and uncovering new truths about AI.
 
-The problem with the “AI Singularity” hypothesis is that it is a shoddy appeal to the language of mathematical induction and statistical thinking - there are no precise mathematical quantities in the above statements, so the “proof” is merely dressed in a veneer of mathematical authority. What does “better” mean? Infinite future suffering is still infinitely bad, no matter what probability you multiply it with.
+The problem with the “AI Singularity” hypothesis is that it is a shoddy appeal to the language of mathematical induction and statistical thinking - there are no precise mathematical quantities in the above statements, so the “proof” is merely dressed in a veneer of mathematical authority. For instance, when we say that an AI system can improve itself as well as humans do, what do we mean by "improve"? 
+
+Infinite future suffering is still infinitely bad, no matter what probability you multiply it with, and no matter how you estimate your confidence intervals. Frequentist statistics breaks down when reasoning about events that can happen once, such as the extinction of humanity. Even if one interprets *probabilities* 
 
 In this book I will make no attempt to hide my disdain for philosophers and “rationalists” who make a lot of noise and tour the media circles but do very little to advance the technology themselves. Rationalists pride themselves on adhering to Bayes rule - then I challenge them to explain what evidence would update their belief to no longer think Superintelligence is no longer a risk. If they cannot think of any such evidence, it means their claims are not falsifiable, and therefore the topic of philosophy and not science. 
 
@@ -90,10 +93,11 @@ Coming for our Jobs
 “AI researcher” is used as a cursory description of someone who works on methods that might contribute to building AI systems.  For the most part, the job is like any other sort of programmer - they sit in front of computers and write code and attend interesting tech talks. I wake up every morning, make myself a cup of coffee, and then curse in frustration as I find some simulations I started the previous night crashed with nothing to show for it. Like all programmers, we regularly search on Stack Overflow for how to do mundane things like convert images into gifs or adjust a plot to be more aesthetically pleasing. 
 The newest breed of AI researcher - the sort that has contributed the most breakthroughs in the last two decades - works on a broad form of computational statistics called “Machine Learning”. Some AI researchers develop new algorithms to solve open-ended problems to make their systems more efficient, while others work in more application-heavy settings like Netflix’s recommender system or Google’s text-to-speech assistant. 
 
-If I were to roughly map out the ontology of the field as a tree:
+To put it concretely, on any given day my computer screen has a window where I write code, another window where I schedule experiments on a supercomputer, and a browser full of tabs where I write emails to colleagues, look at experimental plots to deduce what's going on, and write down my experimental observations and hypotheses.
 
+<!-- If I were to roughly map out the ontology of the field as a tree:
 - draw  a map of the human body and point to different areas like AI, NLP, robotics 
-
+ -->
 
 Separately from that are different fundamental tools, like statistics and ML.
 
@@ -109,6 +113,22 @@ But in order to create Artificial Intelligence, we will have to get more precise
  
 However, without an understanding how AI systems are built, it becomes very hard to reason about the system’s actual capabilities and limitations. It would be like trying to discuss the future of vehicles without knowing the efficiencies of combustion engines, the aerodynamics of planes, or the physics of energy. Much like car designers and manufacturers think about how to make drive chains more efficient or rubber more durable, AI researchers and engineers traffic in getting Machine Learning systems to scale to larger datasets. Fortunately, the first part of this book is dedicated to gradually building up your understanding of how AI works, the most promising aspects and the most challenging bottlenecks.
 With my machine learning and robotics colleagues, we use “AI” to casually describe the catch-all term for “sufficiently advanced software”, knowing full well that such a term is so devoid of technical precision that it isn’t actually useful when describing how to build actual systems. Sometimes experts will refer to a system as “AI” because we are deliberately dealing in the abstract - we don’t know how exactly it will be implemented, so we may refer to hypothetical systems as an “AI” rather than a “Machine Learning system”. 
+
+
+## High-Level and Low Level Problems
+
+AI researchers often should switch between two modes of thinking:
+
+high-level thinking, in which we think broadly about how to put things together and turn it into a capable system. the underlying ideas in alphago (self-play) this book, are all high-level ideas. 
+
+the low-level thinking is about making the ideas actually work -the execution, the debugging, thinking deeply about stable numerical optimization.
+
+non-sexy problems
+
+I spent months thinking about how to featurize some demos to make them easy to learn.
+
+This is what actually moves the field forward.
+
 
 
 Summary

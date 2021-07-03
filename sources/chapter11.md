@@ -7,11 +7,13 @@ reference-section-title: References
 
 Games differ from life in a few important ways.
 
-First, games studied in reinforcement learning tend to be fairly short - a handful of moves on a chessboard, a deck of Poker cards running out after a few dozen turns. The average game of Magic the Gathering ends in 6.7 turns. In contrast, life is a game that never ends - even when you die, your genes keep playing. Even when humanity goes extinct, parts of the human genome will keep playing.
+Ggames studied in reinforcement learning tend to be fairly short - a handful of moves on a chessboard, a deck of Poker cards running out after a few dozen turns. The average professional game of Magic the Gathering ends in 6.7 turns. 
 
-Second, games start with a clearly defined reset state - for instance, shuffling the deck at the beginning of a poker game. For RL algorithms that learn to play games, this is an important detail because it allows us to visit the same states over and over again, allowing trial-and-error to figure out what actions tend to work best for that state. Even learning short games with reinforcement learning require resetting and repeating the game over thousands or even millions of episodes. The initial state of the game may be randomized from episode to episode, but it's done in a way that is independent of the past. Therefore, the distribution of "reset states" are "stationary".
+Games start with a clearly defined reset state - for instance, shuffling the deck at the beginning of a poker game. For RL algorithms that learn to play games, this is an important detail because it allows us to visit the same states over and over again, allowing trial-and-error to figure out what actions tend to work best for that state. Even learning short games with reinforcement learning require resetting and repeating the game over thousands or even millions of episodes. The initial state of the game may be randomized from episode to episode, but it's done in a way that is independent of the past. Therefore, the distribution of "reset states" are "stationary".
 
-I like to use an analogy for describing most RL tasks today: it's like building sand castles at the beach. The “game” starts with a flat pile of beach sand each morning, and no matter how glorious the sand castle you build, the castle is washed away by the tide by the next morning, leaving more or less the exact same starting conditions. In most RL setups, the only thing that is “persisted” between episodes are the updated agent parameters: everything else stays fixed. Such games are relatively easy to learn, and the optimization objective takes place with respect to a fixed initialization and dynamics. The complexity of the world is bounded by what you can build in a day, and nothing more.
+In contrast, life is a game that never ends - even when an individual dies, they are but a chesspiece for their genes, which live on elsewhere. Even when humanity goes extinct, parts of the human genome will keep playing. It's chesspieces all the way down.
+
+Most RL tasks today are like building sand castles at the beach. The environment is reset to a flat pile of beach sand each morning, and no matter how glorious the sand castle you build, the castle is washed away by the tide by the next morning, leaving more or less the exact same starting conditions. In most RL setups, the only thing that is “persisted” between episodes are the updated agent parameters: everything else stays fixed. Such games are relatively easy to learn, and the optimization objective takes place with respect to a fixed initialization and dynamics. The complexity of the world is bounded by what you can build in a day, and nothing more.
 
 Now imagine if there was no tide and no resets - the sandcastle you built one day would be waiting for you the next. You could keep extending it, building a sand kingdom without limit. You might even leave behind instructions to your children on how to build sandcastles. A lot more would be possible if the tide didn't reset your castle-building endeavours every day. Most land animals experience this - our shelters and tools and books persist across time, even though the sun rises each day. The real world has no "resets" - it does not wipe the slate clean, nor are the same starting conditions ever visited. This makes the world substantially richer.
 
@@ -56,11 +58,11 @@ One of the emergent cultural traditions in the shooting game Valorant is that if
 	There is a sweet spot between the unfamiliar and the familiar that really piques human curiosity, something that youtubers like Mr. Beast have masterfully done by asking questions like ["what if I get hunted by a bounty hunter?"](https://www.youtube.com/watch?v=TQHEJj68Jew) ["What if I go through the same drive-thru 1000 times?"](https://www.youtube.com/watch?v=QxGVgXf_LNk)
 
 
-There are some preliminary research projects suggesting that crowd-sourced community participation can be a powerful driver of creative solutions.  sheer diversity and creativity of images generated on ArtBreeder.com, a website in which latent vectors can be combined to form novel images like faces and buildings. You have hundreds of users simultaneously spending their free time - without any compensation - simply exploring the space because their creations are interesting or pleasing to them.
+There are some preliminary research projects suggesting that crowd-sourced community participation can be a powerful driver of creative solutions.  sheer diversity and creativity of images generated on ArtBreeder.com, a website in which latent vectors can be combined to form novel images like faces and buildings. ArtBreeder.com was itself inspired by Picbreeder, which was a research project developed in Ken Stanley's lab. You have hundreds of users simultaneously spending their free time - without any compensation - simply exploring the space because their creations are interesting or pleasing to them.
 
 ![samples from artbreeder.com, where humans guide the crossover and mutation of images. The presence of humans drives the outcomes towards interesting images - a testament to the power of human-in-the-loop search](assets/artbreeder.png)
 
-The interface will be similar to artbreeder and its predecessor, picbreeder, in that humans can watch videos of the agents and choose which agents are combined to form new ones. Having humans guide the selection and combination of traits will accelerate the search, because humans have good mental models of what behaviors they find interesting and what happens when different behaviors are combined.
+Zookeeper will have a similar interface to ArtBreeder and PicBreeder, in that humans can watch videos of agents playing Jungle Basketball (or doing something entirely unrelated) and choose which agents are combined to form new ones. Having humans guide the selection and combination of traits will accelerate the search, because humans have good mental models of what behaviors they find interesting and what happens when different behaviors are combined.
 
 This will interact nicely with the principle of "stepping stones" - qualitative leaps in capability can come from the most unusual of places, such as the adaptation of skin cells eventually turned into vision systes. Such an interface - in which humans can choose two disparate agents and combine them into a novel agent with interesting and never-before-seen behaviors.
 
@@ -68,19 +70,37 @@ This will interact nicely with the principle of "stepping stones" - qualitative 
 	A technical challenge that arises in the Agent Zoo is that as organisms develop longer lifespans and learns to do many different behaviors, evaluating it quickly and holistically is not possible in the span of a few minutes. 
 
 
-Once lifespans are long and chaotic enough, we might begin to see a new level of adaptive behavior unlocked.
-
-Notes from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4027410/
-four phyla (Echinodermata, Arthropoda, Mollusca and Chordata) and nine classes (sea urchins, insects, spiders, crabs, snails, octopi, fish, birds and mammals) as containing tool-using species
-Many studies of sponging dolphins, tool-using birds, does not suggest a large competitive advantage to using tools, there does not appear to be strong correlation between reproductive success and ability to use tools?
 
 
-Tool use in animals can be divided into “hard-wired” / stereotyped tool behaviors, and flexible/adaptive/creative behaviors that are learned 
+<!-- understanding agents as having goals and working to achieve them helps agents to predict behavior of other agents -->
 
-again, we see glimmers of the hard-wired vs. adaptive learning dichotomy here. Animals that perform stereotyped tool behaviors have it baked into their genetic memory, whereas more adaptable animals acquire the ability to *learn to use tools*. this only makes sense if the lifespan is long enough, or if the environment presents itself with far more tool diversity than genetic learning can remember.
 
+
+
+<!-- TODO: read ideas and related works cited in https://arxiv.org/pdf/2012.08630.pdf -->
+
+
+# Tool Use and Invention
+
+In our own biological kingdom, four phyla (Echinodermata, Arthropoda, Mollusca and Chordata) and nine classes (sea urchins, insects, spiders, crabs, snails, octopi, fish, birds and mammals) [are known to contain species capable of using tools](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4027410/). Most of these creatures exhibit hard-wired, stereotyped tool behaviors that requires no learning from their own experience. For instance, sea urchins will [cover themselves with rocks and shells](https://www.biorxiv.org/content/10.1101/347914v1) to protect themselves from predators and the elements.
+
+We see glimmers of the hard-wired vs. adaptive learning dichotomy here. Animals that perform stereotyped tool behaviors have acquired it slowly from past evolution, whereas more adaptable animals acquire the ability to *learn to use tools*. A dynamic tool-use strategy only makes sense if the lifespan is long enough, or if the environment presents itself with far more tool diversity and possibilities for using them than "genetic learning" can remember.
+
+Interestingly enough, from many studies of sponging dolphins, tool-using birds, there does not appear to be strong correlation between reproductive success and ability to use tools. So it's possible that the intelligence required to fashion tools is a byproduct of some other intelligent capability, rather than being a means to an end. An open-ended search here where we are not fixated on developing tool use, but rather have the opportunity to quickly re-purpose interesting behavior will be critical here.
+
+<!-- http://zadorlab.labsites.cshl.edu/wp-content/uploads/sites/59/2021/03/Encoding-innate-ability-through-a-genomic-bottleneck.pdf interesting research on "genomic bottleneck" --> 
+<!-- review article by Tony here: https://www.nature.com/articles/s41467-019-11786-6 -->
 
 # Reproduction
+
+<!-- search in protein encoding space is a very elegant way to search for behaviors, learning algorithms, the whole gamut -->
+
+<!-- rethinking transcription -->
+
+<!-- information -> transcription -> morphology -> learning -> behavior -->
+
+<!-- need search algorithms to find  better info, transcription, morphology simultaneously -->
+
 
 To make things truly lifelong, we have to imbue the genetic information with the ability to propagate via asexual or sexual reproduction. Replication evolved because no genetic information is perfect, and continual mutation and adaptation is more likely to stick around than an unchanging genetic template concentrated in a single location.
 

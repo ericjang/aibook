@@ -8,7 +8,12 @@ reference-section-title: References
 *"The highest and most beautiful things in life are not to be heard about, nor read about, nor seen but, if one will, are to be lived."*
 *- Soren Kierkegaard*
 
-An agent that plays jungle basketball would have no need to create art - it doesn’t win the game, why would it ever need this?  
+An agent that plays jungle basketball would likely have no need to create art - it doesn’t win the game, why would it ever need this?
+
+historical artifacts are to be treasured because they contain knowledge, or have fiat value.
+
+reverence for certain non-fungible objects should 
+
 
 An agent might build a pile of rocks, a stack of three with a large flat rock, a medium-sided rock in the middle, and a small pebble on top to signal to its teammate an important landmark, or strategically important spot. Other agents may begin to ascribe semantic significance to particular arrangements of rocks. 
 
@@ -81,6 +86,14 @@ Would the simulation even permit creating an encrusted knife?
 
 I want to buy art that was challenging to make, took effort, not one that can be printed en masse.
 
+
+## Virtual Historians
+
+keeping historical records - written or oral - allows humanity to extend our memory indefinitely.
+
+it allows us to study extremely complex phenomena like what to expect during economic hyper-inflation (we can look back to 1914-1923 Germany, Emperor Diocletian's rule in 300AD). Individual humans are no longer the surviving organism, they are units to lend compute to humanity's study of itself.
+
+Individual economist and traders helps humanity survive by studying history and reflecting on how the history might rhyme with the past.
 
 
 

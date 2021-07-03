@@ -141,6 +141,9 @@ https://arxiv.org/pdf/2102.02202.pdf
 -->
 
 
+<!-- https://www.youtube.com/watch?v=ISVaoLlW104&list=PLD7E21BF91F3F9683&index=9 - 60's found that rats raised in enriched environments had thicker cortexes, but wild rats had thickest cortex compared to any of the lab rats, suggesting that there is something about the richer environments -->
+
+
 # Summary
 
 

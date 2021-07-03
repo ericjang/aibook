@@ -34,7 +34,7 @@ In the previous chapter I argued that sufficiently long episodes may make it wor
 
 Suppose teammate Alice watches their teammate Bob practice, and sees Bob execute a very successful basketball maneuver. If Alice could put Bob's maneuver into her own shoes, and replicate the same maneuver, then she would have succesfully demonstrated imitation-by-observation.
 
- That information would be very informative to Alice from a reward learning perspective, and perhaps Alice can use that observation to learn that same maneuver. The development of mirror-neuron systems may arise if watching members of their own team is highly informative for further improvement - for instance, the ability to watch re-plays of past games. 
+That information would be very informative to Alice from a reward learning perspective, and perhaps Alice can use that observation to learn that same maneuver. The development of mirror-neuron systems may arise if watching members of their own team is highly informative for further improvement - for instance, the ability to watch re-plays of past games. 
 
 For instance, the development of a mirror-neuron like system might arise if an agent watches members of its own team attempt to do things, then learns which strategies work the best. This is only possible in an environment where agents have the luxury of time to watch other agents do things, and can potentially have a lot of “exploration time” early on in the game before it must compete at the task.
 
@@ -87,6 +87,12 @@ Rather than squabbling over resources each time the group acquires it, the relat
 One challenge is that agents are not incentivized to survive or reproduce - they are incentivized to let their team win.
 
 
+chimps do theory of mind - glass separating banaas https://youtu.be/ISVaoLlW104?t=5500
+
+chimp sees another chimp through one-way or two-way glass. if the chimp knows that the dominant chimp can't see the banana, they will go for it.
+
+chimps are only capable of theory of mind in competitive situations (not cooperative)
+
 reproductive resources (access to mates)
 
 or food resources
@@ -119,7 +125,6 @@ Inevitably, someone will ask the question "if they can sense and conceptualize t
 
 Whereas an implicit understanding of oneself can be achieved via optimization at the genetic level (for instance, simply learning fine motor control achieves this), perceiving other's model of oneself is a quantity that is flexible and changing. Having to perceive important variations around a constant "Alice" 
 
-
 There are a set of related capabilities here: the memory of the immediate present and the passage of time, the conceptualization of the self, the attention to relevant inputs arriving at the “self”. I don't know how these computations occur or what manipulations must go on internally for all this to fit together.
 
 
@@ -145,6 +150,12 @@ So social is the mind of a human that ostracism from our communities make us phy
 
 Ostracism makes us physically sick - the body punishes us for situations that it recognizes as long-term unfavorable for our genetic survival. 
 
+<!-- TODO: move the language and thought contents here? -->
+
+social learning is inextricably linked with general skills like imitation, language.
+
+Just as cells in multi-cellular organisms need to develop intelligent coordination abilities (nervous systems) and specialize (immune cells, blood cells), so do individuals in a highly social group. Once individuals are smart enough to do okay at surviving on their own, the remainder of intelligence will be highly dependent on social evolution, passing on knowledge to future generation, and "standing on the shoulders of giants" (as Isaac Newton said)
+
 
 # The Evolution of Imitation
 
@@ -155,6 +166,7 @@ Agents that can imitate another agent (through energy expenditure).
 
 One of the greatest boons for imitation is that agents who live in larger social communities can explore in parallel, and then teach each other very rapidly once a single agent discovers a viable strategy.
 
+mirror test involves putting a small sticker on some animal's forhead, and see if they investigate the new, unknown marker by bringing up their own finger (or trunk in the case of elephants)
 
 
 We expect communication and collaboration between organisms to eventually emere in order to more efficiently shepherd resources and perform life’s tasks. But what might drive this cooperation? What are some “mini-games” that can encourage the development of these behaviors?
@@ -174,6 +186,9 @@ training for pure team-cooperative ability lends itself to a coordinated, but bo
 
 
 [Human-level performance in 3D multiplayer games with population-based reinforcement learning](https://science.sciencemag.org/content/364/6443/859) by Jaderberg et al. is a very inspiring work showcasing promise in agents.
+
+
+Theory of mind - do you know what information another agent has, but you have?
 
 
 # Jungle Basketball in a Hall of Mirrors

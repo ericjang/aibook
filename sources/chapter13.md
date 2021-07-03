@@ -28,19 +28,15 @@ Language probably helps mediate complex social dynamics
 
 https://en.wikipedia.org/wiki/Behavioral_modernity
 
-
-What to implement
-Why it’s important
-Feasability Analysis
-Unit economics & intermediate deliverables of the technology
-Potential Successes
-Ways it Could Fail
-Research Questions
-
 But at this point, let’s assume we have 1) a powerful algorithms and infrastructure to optimize virtual agents 2) agents that can make use of tools 
 
 An area in ventral occipitotemporal cortex of left hemisphere is called Visual word form area (VWFA) - recognizes objects and symbols (e.g. a house and a drawing of the house). Around age 7 in reading cultures, it responds more strongly to written words. Same regardless of logographic or alphabetic languages. 
+
 Acquisition of language → takes months / years of practice. Does this imply we need to simulate creatures for months and years? 
+
+Is it possible for substantial mastery of language to be in-born, or is there something advantagoues about the way in which humans must spend a lot of time to acquire such skills? (for instance, the ability to learn other really complicated things)
+
+
 
 Ability to read → vastly expand information storage capability.
 

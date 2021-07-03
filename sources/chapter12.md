@@ -57,21 +57,10 @@ Why it’s important
 Feasability Analysis
 VR 
 Unit economics & intermediate deliverables of the technology
-Build household environments in simulation, If you want to build a household robot, try to build an Apex Predator like a bear first, and then give it a mild case of OCD
+Build household environments in simulation, 
 
+If you want to build a household robot, try to build an Apex Predator like a bear first, and then give it a mild case of OCD
 
-Intermediate deliverable: ML middleware for VR 
-
-Life uses just enough intelligence to handle the environment and for its duration of lifespan. A dog lives 10-13 years. 
-
-Imagine simulating the lifespan of an animal for 13 years ! we simply don’t have the computational resources to optimize a system to behave for 13 years. The other strategy is to increase the difficulty
-
-Dog has to be able to do tricks (stick nose in hole formed by two hands)
-
-Given a world governed by finite, non-randomly distributed energy, and energy taking on many forms, life/death provides endless source of evolutionary signal, given a sufficiently rich and large environment.
-
-
-Energy in the world is finite and not randomly distributed across space
 
 
 

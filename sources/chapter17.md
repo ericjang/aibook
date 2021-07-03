@@ -4,17 +4,23 @@ title: Rethinking Work
 link-citations: true
 reference-section-title: References
 ---
+Karl Marx often spoke about the concept of *alienation* - where people no longer build craft of their own, in an end-to-end manner, but participate as cogs in a massive, globalized economic machine where all roles are hyper-specialized. People lose their sense of ownership and autonomy, and thus their connection to humanity.
 
-This book began with an observation that “”
+How will ASI technology distort the social fabric of socioeconomics, and of human relationships itself?
 
-Nothing is as self-centered and human as to ask: “what’s in it for us? What is humanity’s place in a post-ASI world?”
 
-How does ASI technology distort the social fabric of socioeconomics, and of human relationships itself?
+It is inherently human to ask “what’s in it for us? What is humanity’s place in a post-ASI world?”
+
+
 
 Power of intrinsic motivation: students primed with the intrinsic joy of creative writing produced more creative poems than students primed with extrinsic rewards of creative writing, such as fame and money. 
 
 Extrinsic objectives (fame, power, money) often stifle creativity. When you optimize for companies that maximize share holder revenues, you leave out all the other solutions for perfectly viable businesses that do super interesting things.
 
+
+general-purpose robot would be huge - 
+on a given morning, you might ask a general-purpose robot to rife through all your old photos and documents and scan them into digital copies, take care of the termite infestation in the attic, sweep the roof gutter for leaves, sort through junk mail, throw away all the food in the fridge that has gone bad.
+none of these tasks justify a specialized robot - but life is full of small chores
 
 
 On the opposite end of the emotional spectrum of “magic software” is the narrative of AI and robots coming to take our jobs away and increasing the gap between the haves and have-nots. Unlike “AI singularity” risk, this is a very real fear.
@@ -132,6 +138,9 @@ DeepFakes
 
 
 
+
+
+<!-- The fact that our preferences can be so predictable from collaborative filtering is equally remarkable. -->
 
 
 Chapter 19: Playing God
