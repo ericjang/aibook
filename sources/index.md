@@ -1,6 +1,6 @@
 --- 
-title: Artificial Survival 
-subtitle: An Ethological Approach to Artificial General Intelligence
+title: Mortal Coil 
+subtitle: An Ethological Approach to Artificial Intelligence
 author: Eric Jang
 toc: false
 ...
@@ -9,14 +9,15 @@ toc: false
 Part I: AI Today
 
 0. [Introduction](chapter00.html) <!-- ([PDF](pdf/chapter1.pdf)) -->
-1. [Chapter 1: What is AI?](chapter01.html) <!-- ([PDF](pdf/chapter3.pdf)) -->
+1. [Chapter 1: A Day in the Life of an AI Researcher](chapter01.html) <!-- ([PDF](pdf/chapter3.pdf)) -->
 2. [Chapter 2: Software 2.0](chapter02.html) <!-- ([PDF](pdf/chapter3.pdf)) -->
-3. [Chapter 3: Power and Control](chapter03.html) <!-- ([PDF](pdf/chapter3.pdf)) -->
+3. [Chapter 3: Limitations of Narrow AI](chapter03.html) <!-- ([PDF](pdf/chapter3.pdf)) -->
 4. [Chapter 4: From Narrow to General AI](chapter04.html) <!-- ([PDF](pdf/chapter3.pdf)) -->
 5. [Chapter 5: The Struggle to Know Anything](chapter05.html) <!-- ([PDF](pdf/chapter3.pdf)) -->
-6. [Chapter 6: Death Gives Life Meaning](chapter06.html) <!-- ([PDF](pdf/chapter3.pdf)) -->
-7. [Chapter 7: We are Meat Shields](chapter07.html) <!-- ([PDF](pdf/chapter3.pdf)) -->
-8. [Chapter 8: Prior Research on Artificial Life](chapter08.html) <!-- ([PDF](pdf/chapter3.pdf)) -->
+6. [Chapter 6: The Neurobiological Software Stack](chapter05_1.html) <!-- ([PDF](pdf/chapter3.pdf)) -->
+7. [Chapter 7: Death Gives Life Meaning](chapter06.html) <!-- ([PDF](pdf/chapter3.pdf)) -->
+8. [Chapter 8: We are Meat Shields](chapter07.html) <!-- ([PDF](pdf/chapter3.pdf)) -->
+9. [Chapter 9: Prior Research on Artificial Life](chapter08.html) <!-- ([PDF](pdf/chapter3.pdf)) -->
 
 Part II: Artificial Survival Intelligence
 

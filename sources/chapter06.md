@@ -5,6 +5,8 @@ link-citations: true
 reference-section-title: References
 ---
 
+<!-- TODO: this can be potentially merged with the neurobiological software stack chapter -->
+
 What is a single, unifying objective that can force AI systems to acquire and unify the laundry list of AGI capabilities we want? 
 
 
@@ -184,9 +186,6 @@ https://arxiv.org/pdf/1410.8820.pdf
 
 
 
-In the last chapter I discussed the problem of semantic precision - how can we possibly imbue our systems with our preconceived assumptions of the world when we struggle to formalize the simplest of concepts?
-
-As usual, let us turn to nature to understand how it solves this proble.
 
 
 As engineers, we know that the devil is in the details. When someone says “I could code a basic version of the Uber mobile app in a weekend”, they aren’t considering that the hard part is not the high level concept, but the low level logistics and edge cases of it all. (provide some examples here)
@@ -323,9 +322,6 @@ There is one way to survive, which is the exclusion of dying (tautological).
 
 So we need environments that can teach agents that floating ice can be stood on, that polar bears and aliens shooting things at you are dangerous, that falling off a cliff is irrecoverable.
 
-Now, say you are a company that wants to leverage ML to automate away some tedious drudgery (like sorting fruit on an assembly line). Why should you care about artificial life?
-
-
 Machine Learning has had amazing successes in generalizing to unseen instances, but the generalization is not particularly strong because we expect our ML systems to know about things about the world that simply aren't present in the training data 
 
 
@@ -340,3 +336,16 @@ https://en.wikipedia.org/wiki/Evolution_of_human_intelligence
 IF so much of the brain’s design is influenced by energy conservation, adaptations to maximize chances of survival, it seems odd to me that AI researchers attempt to recreate intelligent behavior - the raw export of brains - without also simulating the evolutionary pressures needed to realize it.
 
 In the previous chapter we discussed how biological life is a single, unifying objective that does away with the tricky semantics and messy integration problems we discussed in Chapter 4. Life does not really care about the difference between classifying sandwiches and hot dogs - it only understands their difference in calories. The simple ability to discriminate between “nutritious” and “not nutritious” is the evolutionary basis of separating “good” from “bad”, “friend” from “foe”, “pit bull” from “golden retriever”, and eventually, yes - even “hot dog” from “sandwich”. Life has a simple answer to the capability integration problem posed in chapter 3: there is no need to integrate multiple AI capabilities because there is only one capability, and that is survival. 
+
+
+## On consciousness
+
+We typically think of human minds as being capable of consciousness, and consciousness requires some sort of "advanced information processing", or "computation". But do simpler organisms do "computation"? 
+
+When an e-coli bacterium ascends a glucose gradient in search of richer food sources, is it doing computation? 
+
+When a single ion binds to an ion channel on  a cell membrane, is the cell doing "computation"? At what point does "sensing" end and "computation"  begin? When you drill down to the molecular level, is it all computation? 
+
+At what point then, does non-living physics begin and the "agency" with which intelligence is often associated with begin?
+
+

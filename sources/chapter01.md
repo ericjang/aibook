@@ -1,17 +1,82 @@
 ---
 chapter-number: 1
-title: What is AI?
+title: A Day in the Life of an AI Researcher
 link-citations: true
 reference-section-title: References
 ---
 
 Artificial Intelligence, or A.I. for short, means so many different things to different audiences, that nearly every book on AI begins with the author's personal definition of it. Let me begin with my own. 
 
-Artificial Intelligence is a broad umbrella terms for the *scientific fields* that study how intelligence works, combined with engineering disciplines *to replicate those intelligent capabilities*. It's very much an aspirational name for the field. Much like how cancer researchers have not yet cured cancer yet, AI researchers are well aware of the fact that we are nowhere close to building a machine with human-level intelligence. In fact, we understand the human-level intelligence even less than oncologists understand cancer. 
+Artificial Intelligence is a broad umbrella term for multiple scientific fields that study how intelligence works, combined with multiple engineering disciplines that seek to replicate those intelligent capabilities. "Artificial Intelligence" is a completely aspirational name - much like how cancer researchers have not yet cured cancer yet, AI researchers are well aware of the fact that we are nowhere close to building a machine with human-level intelligence. I might even venture that we understand human-level intelligence substantially less than oncologists understand cancer. 
 
-AI research draws ideas from computer science, neuroscience, philosophy, operations research, physics, philosophy, ecology, sociology, just to name a few areas that have inspired people seeking to replicate intelligence. But to put it bluntly, “AI” is vaguely about “computers doing smart stuff”. What constitutes “smart stuff” is highly dependent on who you talk to, and it tends to be a moving goalpost as computers have automated plenty of human tasks without yet becoming conscious themselves. To quote a tongue-in-cheek definition by Larry Tesler: “Artificial intelligence is whatever hasn't been done yet.”
+The umbrella of AI encompasses computer science, neuroscience, philosophy, operations research, physics, philosophy, ecology, sociology. To put it bluntly, “AI” is vaguely about “computers replicating smart stuff that humans do”. What constitutes “smart stuff” is highly subjective, and it tends to be a moving goalpost as computers have automated plenty of human tasks without yet becoming conscious themselves. To quote a tongue-in-cheek definition by Larry Tesler: “Artificial intelligence is whatever hasn't been done yet.”
 
-Some experts think that the term "AI" should be abandoned altogether, because its broad scope and connotations of being "just as good as human intelligence" confuses and scares the public. Some would prefer to refer to the technology with more technically precise terms like "recommender systems", "Naive Bayes classifier", and "linear regression". I don't share this view, because the methodology of a particular system says nothing about the capabilities of the system. For instance, a neural network can be used to perform a simple forecast of housing prices based on square footage. A larger neural network can be used to best the human champion at Go. We might be able to do either of these tasks without neural networks. If an external observer can't tell, then does it make sense to describe the system as what's happening under the hood? The term "Artificial Intelligence" captures the right aspirational goal - we seek to understand our own intelligence and replicate it in software.
+Some experts think that the term "AI" should be abandoned altogether, because its broad scope and aspirational connotations of being "as good as human" tends to confuse or scare the public more than it informs. Some would prefer to refer to more precise terms like "computer vision" and "Bayesian statistics". I don't share this view, because focusing too closely on present descriptors biases one to think about methodology and make public science communication more difficult. The core algorithms underpinning a particular system says nothing about the capabilities of the system, especially when learning is involved. For instance, a neural network can be used to perform a simple forecast of housing prices based on square footage. A larger neural network can be used to best the human champion at Go. We might be able to do either of these tasks without neural networks. The term "Artificial Intelligence" captures the right aspirational goal - we seek to understand our own intelligence and replicate it in software.
+
+
+# What do AI Researchers Even Do?
+
+
+
+I think if the public could watch the day-to-day life of AI researchers and roboticists, they would be vastly comforted by how far we are away from the existential risks .
+
+
+
+The daily routine of an AI researcher is surprisingly mundane.
+
+I wake up, fix myself a cup of coffee, check emails from colleagues who have sent me code changes to review and approve. Like all programmers, we regularly search on Stack Overflow for how to do mundane things like convert images into gifs or adjust a plot to be more aesthetically pleasing. 
+
+Being an AI researcher is not only about building systems that accomplish intelligent things, but because our understanding of intelligence is so poor, we spend a lot of time asking "why" questions.
+
+Each time I run an experiment, I look at the data - if there are any surprising observations that don't match up with my understanding of reality, then I formulate a hypothesis to explain that anomaly, and then implement a new experiment to prove or disprove the hypothesis. Rinse and repeat.
+
+
+In my 5 years at Google, I worked on the first end-to-end RL systems, scaling up imitation learning in our lab, and making some advances in more basic methods research in probabilistic modeling. I watched as many colleagues around me grew into their respective research niches, becoming more experienced research
+I look over yesterday evening's experiments
+
+The robots are doing the same things as they were yesterday, which is often nothing at all, having halted for some reason or another from yesterday.
+
+
+
+
+On any given day my computer screen has a window where I write code, another window where I schedule experiments on a supercomputer, and a browser full of tabs where I write emails to colleagues, look at experimental plots to deduce what's going on, and write down my experimental observations and hypotheses.
+
+
+
+AI researchers often should switch between two modes of thinking:
+
+high-level thinking, in which we think broadly about how to put things together and turn it into a capable system. the underlying ideas in alphago (self-play) this book, are all high-level ideas. 
+
+the low-level thinking is about making the ideas actually work -the execution, the debugging, thinking deeply about stable numerical optimization, thinking about the best way for a neural network to spit out a quaternion for representing orientations.
+
+
+ moves the field forward.
+
+
+
+
+
+
+The newest breed of AI researcher - the sort that has contributed the most breakthroughs in the last two decades - works on a broad form of computational statistics called “Machine Learning”. Some AI researchers develop new algorithms to solve open-ended problems to make their systems more efficient, while others work in more application-heavy settings like Netflix’s recommender system or Google’s text-to-speech assistant. 
+
+
+Separately from that are different fundamental tools, like statistics and ML.
+
+
+The general public is generally unaware of the mundane details of software programming, so they rely on the science fiction portrayals of “AI” to shape their understanding of the technology. It comes as not surprise then, that the general populace  reacts to any sufficiently advanced technology with exuberant optimism or unbridled fear. 
+To be clear - to date, no one has created AI that reflects a degree of “agency” that is as convincing as what we see in science fiction. How we do that will be the subject of this book.
+ 
+In science fiction and public discourse, “AI” has very different connotations. A “General AI” is an  “Artificial” being capable of doing anything a human can - much like an actual person. This is reinforced by science fiction portrayals, where AIs range from intelligent assistants to murderous robots. These robots often possess an anthropomorphic sense of self,  referring to themselves as “I” or having self-preservation as a part of their programming directives. 
+Simultaneously, people have deep-seated fears of being replaced, of losing purpose in life because someone or something can do it better than they can.  
+ 
+In order to gain a deeper understanding of AI technology, we must discuss how we build these sophisticated computer programs. 
+But in order to create Artificial Intelligence, we will have to get more precise than that.
+ 
+However, without an understanding how AI systems are built, it becomes very hard to reason about the system’s actual capabilities and limitations. It would be like trying to discuss the future of vehicles without knowing the efficiencies of combustion engines, the aerodynamics of planes, or the physics of energy. Much like car designers and manufacturers think about how to make drive chains more efficient or rubber more durable, AI researchers and engineers traffic in getting Machine Learning systems to scale to larger datasets. Fortunately, the first part of this book is dedicated to gradually building up your understanding of how AI works, the most promising aspects and the most challenging bottlenecks.
+
+
+With my machine learning and robotics colleagues, we use “AI” to casually describe the catch-all term for “sufficiently advanced software”, knowing full well that such a term is so devoid of technical precision that it isn’t actually useful when describing how to build actual systems. Sometimes experts will refer to a system as “AI” because we are deliberately dealing in the abstract - we don’t know how exactly it will be implemented, so we may refer to hypothetical systems as an “AI” rather than a “Machine Learning system”. 
+
 
 
 # Software Today
@@ -62,10 +127,8 @@ However, the use of the term “Artificial Intelligence solves” gives the head
 
 These headlines, in which all expert nuance is discarded for mass consumption - highlight the reality that public science education is woefully inadequate for understanding modern technology and mathematics. This is not unique to AI - we see this happen often in quantum physics (Does Quantum Physics Support Buddhism?), biotechnology research (Stem Cells Reverse Aging). There are publications (Quanta Magazine) that attempt to bridge the knowledge gap between the experts and the public and bring a more accurate representation of science to mainstream, but by and large the public does not understand the limitations of computer technology and modern AI research.
 
-
+<!--
 # On Rationalists
-
-<!-- TODO: this comes across as too hostile-->
 
 Fanned by the flames of media sensationalism, there is a surprisingly large community of pseudo-intellectuals and “AI philosophers” who will make wild extrapolations on the capabilities of AI systems. The basic argument is based on two assumptions:
 
@@ -86,55 +149,13 @@ In this book I will make no attempt to hide my disdain for philosophers and “r
 
 A philosophical interest in quantum physics does not make one an authority on quantum physics, which is entirely what is happening with the rationalist community’s perspective on AI. It’s the experimenters who probe reality that hold the truth, not the people who sit in an armchair who philosophize on what intelligence and can and cannot do.
 Coming for our Jobs
-
-
-# What do AI  Researchers Even Do?
-
-“AI researcher” is used as a cursory description of someone who works on methods that might contribute to building AI systems.  For the most part, the job is like any other sort of programmer - they sit in front of computers and write code and attend interesting tech talks. I wake up every morning, make myself a cup of coffee, and then curse in frustration as I find some simulations I started the previous night crashed with nothing to show for it. Like all programmers, we regularly search on Stack Overflow for how to do mundane things like convert images into gifs or adjust a plot to be more aesthetically pleasing. 
-The newest breed of AI researcher - the sort that has contributed the most breakthroughs in the last two decades - works on a broad form of computational statistics called “Machine Learning”. Some AI researchers develop new algorithms to solve open-ended problems to make their systems more efficient, while others work in more application-heavy settings like Netflix’s recommender system or Google’s text-to-speech assistant. 
-
-To put it concretely, on any given day my computer screen has a window where I write code, another window where I schedule experiments on a supercomputer, and a browser full of tabs where I write emails to colleagues, look at experimental plots to deduce what's going on, and write down my experimental observations and hypotheses.
-
-<!-- If I were to roughly map out the ontology of the field as a tree:
-- draw  a map of the human body and point to different areas like AI, NLP, robotics 
- -->
-
-Separately from that are different fundamental tools, like statistics and ML.
-
-I think if the public could watch the day-to-day life of ML researchers they would be vastly comforted by how far we are away from building paper-clip maximizers.
-The general public is generally unaware of the mundane details of software programming, so they rely on the science fiction portrayals of “AI” to shape their understanding of the technology. It comes as not surprise then, that the general populace  reacts to any sufficiently advanced technology with exuberant optimism or unbridled fear. 
-To be clear - to date, no one has created AI that reflects a degree of “agency” that is as convincing as what we see in science fiction. How we do that will be the subject of this book.
- 
-In science fiction and public discourse, “AI” has very different connotations. A “General AI” is an  “Artificial” being capable of doing anything a human can - much like an actual person. This is reinforced by science fiction portrayals, where AIs range from intelligent assistants to murderous robots. These robots often possess an anthropomorphic sense of self,  referring to themselves as “I” or having self-preservation as a part of their programming directives. 
-Simultaneously, people have deep-seated fears of being replaced, of losing purpose in life because someone or something can do it better than they can.  
- 
-In order to gain a deeper understanding of AI technology, we must discuss how we build these sophisticated computer programs. 
-But in order to create Artificial Intelligence, we will have to get more precise than that.
- 
-However, without an understanding how AI systems are built, it becomes very hard to reason about the system’s actual capabilities and limitations. It would be like trying to discuss the future of vehicles without knowing the efficiencies of combustion engines, the aerodynamics of planes, or the physics of energy. Much like car designers and manufacturers think about how to make drive chains more efficient or rubber more durable, AI researchers and engineers traffic in getting Machine Learning systems to scale to larger datasets. Fortunately, the first part of this book is dedicated to gradually building up your understanding of how AI works, the most promising aspects and the most challenging bottlenecks.
-With my machine learning and robotics colleagues, we use “AI” to casually describe the catch-all term for “sufficiently advanced software”, knowing full well that such a term is so devoid of technical precision that it isn’t actually useful when describing how to build actual systems. Sometimes experts will refer to a system as “AI” because we are deliberately dealing in the abstract - we don’t know how exactly it will be implemented, so we may refer to hypothetical systems as an “AI” rather than a “Machine Learning system”. 
-
-
-## High-Level and Low Level Problems
-
-AI researchers often should switch between two modes of thinking:
-
-high-level thinking, in which we think broadly about how to put things together and turn it into a capable system. the underlying ideas in alphago (self-play) this book, are all high-level ideas. 
-
-the low-level thinking is about making the ideas actually work -the execution, the debugging, thinking deeply about stable numerical optimization.
-
-non-sexy problems
-
-I spent months thinking about how to featurize some demos to make them easy to learn.
-
-This is what actually moves the field forward.
+-->
 
 
 
 Summary
 There are two meanings when people use the word “AI”. The first is from science fiction, and carries with it anthropmorphic bias of robots with their own agency. 
 The latter is “narrow AI”, which is a moving goalpost dictated by how “hard” the technology is. What was considered AI 20 years ago is just “regular code” today.
-Only programmers have a nuanced view on what is “hard”, so everyone from VCs to CEOs confuse the public by m their products “AI”. 
+Only the engineers on the ground have a nuanced view on what is “hard”, so everyone from VCs to CEOs confuse the public by m their products “AI”. 
 The media simplifies language that evokes anthropormophic bias towards AI. 
 AI Alarmists ( a disjoint set of people from AI researchers who actually move the technology forward) genuinely believe that Superintelligence Risk is one of the greatest threats facing humanity in the future and we need to act on it today.
-

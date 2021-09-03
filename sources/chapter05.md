@@ -1,11 +1,23 @@
 ---
 chapter-number: 5
-title: The Struggle to Know Anything
+title: Reality is a Fractal of Detail
 link-citations: true
 reference-section-title: References
 ---
 
+<!-- Mention this essay http://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail and i, pencil -->
+
+<!-- wrote some copy on this tweet thread -->
+<!-- https://twitter.com/ericjang11/status/1424593450255544324?s=20 -->
+
 Walter : When one note is off, it eventually destroys the whole symphony, David.
+
+
+
+When a human talks to another human, they can use language which is fuzzy and ambiguous, and the other human can translate the intent into concrete action.
+
+But when we communicate intent to computers, they do not know how to translate our intent into concrete action.
+
 
 
 There are a few camps to this observation:
@@ -23,6 +35,12 @@ Take an Atari game and swap out one sprite for another - a human will quickly fi
 
 Once we do that, we can learn from a few samples, and not be so brittle in the face of new-ish inputs. A hypothetical improvement such hybrid systems would accomplish would be using logical reasoning to quickly generalize:  “Instead of memorizing the fact that Plato and Aristotle and Euripides and each of the other billions of other individuals preceding us were all mortal, you learn a general truth, that all humans are mortal, and apply that general truth to specific instances of that category, as needed.”
 its easy to say that ML doesn't generalize but hard to construct a system that actually demonstrates "generalization without ML"
+
+
+It's like zooming into a fractal - each time you think you've fully broken down the problem into smaller pieces, you find that the small pieces have vast complexity of their own. 
+
+
+
 
 
 
@@ -241,3 +259,24 @@ Suppose you want to build a robot that can grasp objects in a stable manner.
 
 
 This is where AI excels : in reflecting human preferences, in imitation of human expert behaviors, it lifts the burden of having to be explicit about what we want or how we define something to be a cat or not (human provides label saying something is a cat, but does not tell the machine how to do it).
+
+
+## Executing on Ideas
+
+
+Furthermore, even if the high level recipe is obvious, execution is everything and it may be quite challenging to formulate problems in the right way. There are countless minutiae of obstacles that appear once you get down to the implementation details. For example, multi-task systems - things that are supposed to handle multiple different types of inputs - can sometimes from catastrophic forgetting, where the acquisition of one knowledge annihilates knowledge of how to do another (as opposed to an optimistic story where they help each other):
+
+There is a world of detail that goes into making the idea work.
+
+The AlexNet paper which kicked-off the Deep Learning revolution was preceded a year earlier by a DNN developed by Dan Cireșan, but Cireșan’s network was considerably smaller and he never demonstrated it on a sufficiently hard benchmark. This theme continues to today in computer vision community - the entire field is mostly focusing on the exact same set of problems with tweaks to neural net architecture, so the function approximators are not doing anything substantially new.  But the difference in execution ability has since bridged the 15% top-1 error rate to less than __%. 
+
+The little details involved in improving basic building blocks needed to realize higher level ideas. Take for instance, reinforcement learning, a decades-old effort to create methods that control software agents that perform some task and improve that agent based on experience.
+
+DeepMind is an organization that employs over 1000 people to date, with a sizable population of its researchers working to improve reinforcement learning technology to be more efficient and  scalable.
+
+In 2020, they published Agent57, a generic RL agent that finally matched human-level performance on the Atari benchmark, which they started working on in 2016.
+
+Ultimately, Agent57 comprises thousands of scientist-hours and billions of cumulative compute hours in automated search to find a better Q-learning agent. Agent57 is an incredible achievement, but fundamentally solves the same problems that DQN does. Considering that the original DQN paper was published 6 years earlier, this was still an incredible number of additions to the field made possible by the efforts of the entire research community. Such is the real speed of progress, which is often glossed over by people who are enamoured with the concept of AI but are not really on the ground getting their hands dirty with research experiments.
+One reason why research progress can be slow is that academics tend to get lost in the minutiae, asking low-level questions like “how do we tune the regularization term in Max-Ent algorithms to make it easier to use”. 
+Such questions have driven much of the AI breakthroughs of the last decade. But 10 years from now, if we are still primarily concerned with these questions and not asking increasingly philosophical questions of identity, creativity, consciousness, and getting agents to dream as humans do, that would be a great disappointment to me. 
+

@@ -12,6 +12,7 @@ SOURCES := sources/index.md \
            sources/chapter03.md \
            sources/chapter04.md \
            sources/chapter05.md \
+           sources/chapter05_1.md \
            sources/chapter06.md \
            sources/chapter07.md \
            sources/chapter08.md \
@@ -36,6 +37,7 @@ CHAPTERS := sources/chapter00.md \
             sources/chapter03.md \
             sources/chapter04.md \
             sources/chapter05.md \
+            sources/chapter05_1.md \
             sources/chapter06.md \
             sources/chapter07.md \
             sources/chapter08.md \

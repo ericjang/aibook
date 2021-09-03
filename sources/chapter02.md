@@ -29,7 +29,7 @@ Fewer assumptions => more data
 More assumptions => less data
 I like thinking about ML systems as Software 1.0 + Software 2.0, because it abstracts away the flexible nature of how we supply inductive biases and scaffolding around ML models, and also abstracts away the details of the function approximator and learning algorithm. There are many choices of ML models, each with dense, inaccessible names and: support-vector-machines, kernel methods, logistic regression, neural networks, random forests, nearest-neighbors. The difference between this academic jargon is not super important for the purposes of reading this book. With enough mathematical analysis, it is possible to blur the boundaries between these algorithms; for example, a SVM can be understood as a special case of a neural network, or vice versa.  
 
-The Deep Learning Revolution
+## The Deep Learning Revolution
 
 Deep Learning, the new technological buzzword of the decade, is the revival of neural networks as the predominant ML technique used to solve large-scale ML problems.
 
@@ -72,6 +72,8 @@ Since then, DeepMind researchers have found ways to even further reduce biases o
 The Silicon-Valley billionaire-backed startup OpenAI leveraged that idea - transmuting compute into data - to tackle another challenging game, Dota. <TODO: describe the result of the game>.  - partially observable fog of war, requirign agents to exhibit memory, cooperate between agents.
 
 UT Austin, led by work by Noam Brown,  has <describe Pluribus? , Hanabi - games that were previously thought to require human intuition and psychology>.
+
+Once again: search is turning compute into data. A neural network can turn data into compute.
 
 Perhaps nothing more has captured society’s imagination more than AI defeating humans in games of great intellectual skill and creatiivty. One of the most profoudn realizations in the development of powerful game playing AIs is that we gain a better understanding of our own intelligence. 
 It was long thought that games like Go and Poker relied on human learnings from war, culture, and psycholgical deception. It’s clear now that that knowledge, while it may serve a human well in mastering the game, is not actually a strict requirement and may be nothing more than a human’s desire to anthopomorphize decision-making.
@@ -274,3 +276,5 @@ They are not always the most suitable tool (linear or logistic regression on the
 
 This has brought us into a “tower of Babel moment” in AI: different disciplines and applications can share algorithms because we all use the same general building blocks for learning. 
 
+
+If I were to summarize the developments in machine learning in the last decade, it would be that we have made very powerful systems using end-to-end optimization with increasingly few assumptions about model design. We give up our assumptions of which computations need to be performed, and let brute-force automated search find the best solution for us. In the next chapter we will address the limitations of this approach.

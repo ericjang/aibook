@@ -7,7 +7,7 @@ reference-section-title: References
 
 Given that Life’s pursuit of survival is the only process that has created general intelligence to date, it is tempting to suggest that we can achieve AGI by simulating evolution until it produces an organism approaching human-level competency. That is the main approach that I, and many other researchers who came before me, propose we do in order to solve AGI.
 
-It’s a simple idea, but by no means an easy one. Thorny implementation questions arise when one puts their fingers to the proverbial computer terminal. What stuff exactly is doing the “surviving and evolving”? How physically accurate does the simulation need to be? What constitutes a “generation”? What is the boundary that separates the living from the non-living?
+It’s a simple idea, but by no means an easy one to execute. Thorny implementation questions arise when one puts their fingers to the proverbial computer terminal. What stuff exactly is doing the “surviving and evolving”? How physically accurate does the simulation need to be? What constitutes a “generation”? What is the boundary that separates the living from the non-living?
 
 We are often taught in school that the “cell” is the most basic unit of life. Anything simpler than a cell - viruses, mitochondria and organic molecules - are not really alive. The usual explanation provided in textbooks is that these things require a host cell to survive and reproduce and perform their function, which disqualifies them from “self-sufficient life”. 
 

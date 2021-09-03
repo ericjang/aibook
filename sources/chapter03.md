@@ -1,52 +1,85 @@
 ---
 chapter-number: 3
-title: Power and Control
+title: Limitations of Narrow AI
 link-citations: true
 reference-section-title: References
 ---
 
-Now that we’ve discussed how great neural nets are and all the functions they can approximate, you may be tempted to think that all of society’s technology problems can be solved with deep learning. Let’s just collect a lot of data, fit it to large neural networks with an abundance of compute, we can create any software imaginable!
+Now that we’ve discussed how great neural nets are and all the functions they can approximate, you may be tempted to think that all of society’s technology problems can be solved with deep learning. Let’s just collect a lot of data of human prediction and decision-making, fit it to large neural networks with an abundance of compute, and we can automate any human-level intelligence task! 
 
-Indeed, we have many reasons to be optimistic about the technology and the principles underlying end-to-end machine learning. Deep learning has allowed us to scale to larger input modalities, more data, bigger models, and capture decision making that we struggle to articulate with our feeble Software 1.0 assumptions. However, in this chapter we should be realistic: deep learning does not equate to “technological progress without limit”. 
+Indeed, we have many reasons to be optimistic about the technology and the principles underlying end-to-end machine learning. Deep learning has allowed us to scale to larger input modalities, more data, bigger models, and capture decision making that we struggle to get right with our feeble Software 1.0 assumptions. But it is a double-edged sword: the internal representations are inscrutable. If the data does not contain important information on how we want the task to be solved, the neural net will simply make something up based on spurious correlations in the data. By relinquishing control on how the ML model makes decisions, the solution that Software 2.0 finds may be completely inconsistent with how we think the ML model should make decisions, and generalize poorly. Sometimes models can generalize and delight us in surprising ways, and other times it can fail spectacularly in surprising ways. Even if these error rates are low, say, less than 1 failure in a thousand predictions, it is still an unacceptable amount of machine error for real world applications like self driving cars.
 
-If I were to summarize the developments in machine learning in the last decade, it would be that we have made very powerful systems using end-to-end optimization with as few assumptions as possible. We give up our assumptions of how software should work, and let automated search find the best solution for us. 
+Rule-based methods have often been offered up as the solution to these shortcomings of ML. They go by many names - symbolic AI, structural causal models, reasoning-based systems. ML critics such as Gary Marcus, Judea Pearl jump at every chance to throw shade at machine learning, arguing that curve fitting can never capture the complexity and generality of logical operations on symbols. It's practically their personal brand to hate on the efforts of deep learning community.
 
-The trouble about giving up our assumptions when building end-to-end ML systems is that by relinquishing control on how the ML model makes decisions, the solution that Software 2.0 finds may be completely inconsistent with how we think the ML model should make decisions.
+But they are right to point out that neural networks are currently quite brittle in ways humans are not. Often, astoundingly brittle. Take, for example, the following task: you read some gas prices on a sign and want to compute the price change from last month. The reasonable, “hybrid” approach would be to use Machine Learning to parse the “symbols” from the image - e.g. using optical character recognition to read the price $3.70. From there, we rely on good old-fashioned Software 1.0 programming: we use a database to store last month’s gas prices, look up that price and perform numerical subtraction.
 
-. For example, suppose you have a dataset of stop signs and other traffic signs. From this dataset, an end-to-end ML system may decide that anything reddish in color is a stop sign, and everything else is not. But it ignores the octagonal shape of stop signs, the word “STOP”, and so forth. So if you showed it a picture of a fire extinguisher, the ML model might misclassify it as a STOP sign (a false positive error). 
+In contrast, the end-to-end approach sounds absurd. A model looks at two images and outputs the differences in prices - no intermediate subtraction or even understanding that there are numbers. This approach might eventually work with a large amount of data, but much like the Prisoners in Plato’s Cave, our current ML methods will likely never understand the true symbolic nature of the images - that each image contains a numerical price and we are to subtract the prices. 
 
-One might design a more clever training dataset to remove such “spurious correlations” (for example, training the network on red, octagonal objects that are not stop signs, but in practice it’s hard to design examples to cover all the edge cases.
+Marcus draws an analogy to The Allegory of the Cave: people inside a cave are holding up puppets, and a fire illuminates the cave so that shadows of the puppets appear on the walls. Some prisoners are facing the walls and only see the shadow. The shadows represent observations, but the true nature of the shadows is the puppets. You can make deductions on how the shadows will move based on a lot of observation of how they tended to move in the past, but until you truly understand how the shadows are created and the existence of the puppets and the optics, your understanding will only be cursory and forever limited to what you have already seen.
+
+
+<!-- Deep Learning explicitly eschews intermediate, user-imposed data formats, instead using a stack of learned representations. This makes the system more powerful, as our preconceived notions of intermediate representations are often sub-optimal.  -->
+
+<!-- However, deep learning does not equate to “technological progress without limit", for we still live in a world of finite compute and memory and data. 
+The "let the neural net figure everything out" has resulted in black box models that sometimes delight us in surprising ways, but also fail spectacularly in surprising ways. This chapter discusses the various difficulties of getting modern "Narrow AI" systems to work more reliably in the real world, and why despite the incredible research breakthroughs in AI, research and applications are still limited primarily to large companies with significant research budgets. 
+ -->
+<!-- Suppose you want to build a computer vision model that detects and classifies stop signs. You assemble a dataset of stop signs and other road markers, and train a neural network end-to-end. From this dataset, an end-to-end ML system may decide that anything reddish in color is a stop sign, and everything else is not. But in the process of compressing the training data, the model might learn to ignore the octagonal shape of stop signs, or even the word “STOP”. So if you showed it a picture of a fire extinguisher, the ML model might misclassify it as a STOP sign. Likewise, if you showed it a picture of a sign that said "STOP" on a white background, it would misclassify it as "not-a-stop-sign".
+ -->
+
+<!-- Seeing that end-to-end methods tend to not be robust enough for full automation in the real world, many researchers have called for adding more inductive biases.
+Apalled by the lack of robustness and silly errors ML models make, researchers have called for us to ease up on the "end-to-end" methods, and inject more structural knowledge into our narrow AI models. There are many ways people say it, e.g. "hybrid learned + symbolic systems", "causal deep learning", and so forth. In a way, it is a "backpedaling" of 
+backpedal 
+Many researchers have called for our systems to utilize more assumptions in our models, either in replacement of or in addition to huge amounts of data. Depending on who you are speaking to, this is called “causal reasoning”,  "rule-based methods”, “interpretable models”.
+ -->
+
+
+
+<!-- In this chapter we will discuss interpretability, causal ML, and symbolic reasoning. All of these are brought up as ways to "fix" deep learning, but 
+As Deep Learning technology begins to leave the lab and have large impacts on society, this impact has attracted the attention of socio-technical academics.
+ -->
+## Interpretability is a PICNIC Problem
+
+Many researchers have suggested that we could "open up the black box" of neural networks by building models that make "explainable predictions". This goes by other names like "interpretability" and "attribution". For example, we might want to know which parts of an image contributed most strongly to its output, and ensure that the model is at least attending to the right features when making a decision. We could do the same with the parameters of the model - which weights contributed most strongly to the prediction?
+
+What does "explainable" mean, formally? One simple definition is that a human ought to be able to understand how inputs are converted into outputs. But if all you wanted was a complete understanding for why a model predicted what it did, you only need to trace its input through every set of linear and non-linear routines until you arrive at the outputs. Unlike a biological mind, where we are uncertain where computation is happening, a neural net is relatively straightforward set of computations with a high degree of reproducibility. Similarly, if you want a complete explanation for how a model got to its current set of parameters, you only need to trace the updates generated by the dataset over the course of training. All the computations are there for you to inspect, one by one, and you can replay them over and over again exactly as they happen. 
+
+But this is not quite satisfactory to someone who cares absout “explainable AI” - we expect a simpler, intuitive narrative of how a model got to that decision without worrying about every single multiplication and addition operation that took place. A human wouldn't describe how their neurons spiked to perform classification, they would explain to you in language what they saw that made them predict what they did.
+
+The problem is that the computations are so numerous and there are no intermediate visualizations in the network that a human can use to check that the model understands the problem as the human does. In computer programming we have a name for this: PICNIC - "Problem In Chair, Not In Computer". So interpretability cannot be a strictly formal mathematical definition, but one that must align with the cognitive biases (and cognitive limitations) of humans. 
+
+So, when we say “interpretability”, we don’t mean the ability to probe a neuron like a neuroscientist does a mouse. We mean that the model should give us a fairly short summary of the millions of computations that took place, so that we get the most important parts described to us, and not only should the output be correct, but the explanation should be human-readable and consistent with our own understanding. We want the model to reason in the space of human thought, perhaps express those computations to us via language. Models today are effective at building language, but we don't have models that perform prediction tasks by *reasoning in language space*. I think leveraging modern language models as a building block for "reasoned prediction" can be quite an interesting approach to tackling interpretability in a human-aligned way.
+
+## Causality: A Figment of Human Imagination?
+
+Causal reasoning deals with tools that allow us to make special kinds of inferences from data, such as counterfactuals. One example of answering a counterfactual question from data is "what would happen if had given the drug to the patient?" This requires certain assumptions that current ML methods do not explicitly make.
+
+A close cousin of the demand for "interpretable models" is the clamor for ML models to be "causal". 
+
+No louder voice has been from Turing Award winner Judea Pearl, who pioneered a lot of the statistical and computational models for modeling
+
+<!-- TODO: need a more detailed treatment of causal ML -->
+
+For instance, if we were training a ML model to predict the next frames of a video, we would want it to understand that it is the happy dog that wags the tail, not the tail wagging that makes the dog happy. Of course, human intuition about causality is not always correct - it turns out that behaviors like smiling can affect emotion (the facial feedback hypothesis), and the mathematics of causality sort of break down when reasoning about coupled systems (e.g. two planets orbiting each other - what causes what?). But all the same, we expect our models to conform to our human expectations in order to find them trustworthy.
+
+One might design a more clever training dataset to remove such “spurious correlations” (for example, training the network on red, octagonal objects that are not stop signs, but in practice it’s hard to design examples to cover all the edge cases. 
 
 Having less transparency on how ML models come to make the decisions they do is, at best, hard to debug, and at worst, dangerous for the users. 
 
-By taking those assumptions away, we have lost the ability to exert control over the complex, parallel computations now being made by function approximators. There is no intermediate, human-designed output intended to be user-readable. This makes the system more powerful (often what we ask the intermediate outputs to be is not the best way for the system to solve the task), but it makes its internals also inscrutable and we lack the guarantees to know what it might predict.
-
-Interpretability is a hot research topic. We often hope that our AI models will be able to “explain themselves”. For example, we might want to know which input values contributed most strongly to a network’s decisions.
-
-The thing is, artificial networks are perfectly interpretable. It’s just that the computations are so numerous 
-
-Unlike a biological mind, where we are not even sure where it begins and ends within the organism, a neural net is relatively straightforward set of computations. It begins with an input, and follows a series of parallel linear algebra routines, ultimately transformed into some output.
-
-If you wanted a complete explanation for why a model predicted what it did, you only need to trace its input through every set of linear algebra routines until you arrive at the model. 
-
-Similarly, if you want a complete explanation for why a model got to its current set of parameters, you only need to trace the updates generated by the dataset over the course of training. All the computations are there for you to inspect, one by one, and you can replay them over and over again exactly as they happen. 
-
-But this is not quite satisfactory to someone who cares absout “explainable AI” - they want a simpler, compressed narrative of how a model got to that decision without worrying about every single multiplication and addition operation that took place.
-
-So, when we say “interpretability”, we don’t mean the ability to probe a neuron like a neuroscientist does a mouse. We mean that the model should give us a fairly short summary of the millions of computations that took place, so that we get the most important parts described to us.
-
-Of course, this may very well be an exercise in folly.
+<!-- By taking those assumptions away, we have lost the ability to exert control over the complex, parallel computations now being made by function approximators. -->
 
 
-Similar to how we try to summarize the intricate computations of fluid dynamics into a simple explanation of why planes fly, we find that any intermediate, non-technical explanation sort of falls short, does not capture the whole picture, is leaky.
-https://www.scientificamerican.com/article/no-one-can-explain-why-planes-stay-in-the-air/
+Similar to how we try to summarize the intricate computations of fluid dynamics into a simple explanation of why planes fly, we find that any intermediate, non-technical explanation sort of falls short, does not capture the whole picture, is [a leaky, approximally causal abstraction](https://www.scientificamerican.com/article/no-one-can-explain-why-planes-stay-in-the-air/)
+
+
 
 
 The no free lunch theorem tells us that a model is only as good as its biases and data permit it to be. If you want to spend less money on computers or data, you had better write down some good biases. And if history is any indication, humans are not particularly good at formulating good biases for models - if we were, we wouldn’;t have any need for learning! 
 
 
+
 “Sample-efficient learning” is an oxymoron. If you want to spend less $ on compute/data, the no free lunch theorem requires you to write down good inductive biases. If you are hard-coding more and learning less, can we really still call that “learning”? 
 
+Socio-technical systems - first coined by 
 
 Execution
 
@@ -57,43 +90,31 @@ A missing building block not invented yet (e.g. Transformers, ReLUs, Normalizing
 an intuitively correct idea but a mistake in the mathematical formulation.
 Software engineering skill of the lead researcher.
 
-The AlexNet paper which kicked-off the Deep Learning revolution was preceded a year earlier by a DNN developed by Dan Cireșan, but Cireșan’s network was considerably smaller and he never demonstrated it on a sufficiently hard benchmark. This theme continues to today in computer vision community - the entire field is mostly focusing on the exact same set of problems with tweaks to neural net architecture, so the function approximators are not doing anything substantially new.  But the difference in execution ability has since bridged the 15% top-1 error rate to less than __%. 
+<!--ideas vs. execution and academia vs. industry - should this be moved into different chapter? -->
 
-The little details involved in improving basic building blocks needed to realize higher level ideas. Take for instance, reinforcement learning, a decades-old effort to create methods that control software agents that perform some task and improve that agent based on experience.
 
-DeepMind is an organization that employs over 1000 people to date, with a sizable population of its researchers working to improve reinforcement learning technology to be more efficient and  scalable.
-
-In 2020, they published Agent57, a generic RL agent that finally matched human-level performance on the Atari benchmark, which they started working on in 2016.
-
-Ultimately, Agent57 comprises thousands of scientist-hours and billions of cumulative compute hours in automated search to find a better Q-learning agent. Agent57 is an incredible achievement, but fundamentally solves the same problems that DQN does. Considering that the original DQN paper was published 6 years earlier, this was still an incredible number of additions to the field made possible by the efforts of the entire research community. Such is the real speed of progress, which is often glossed over by people who are enamoured with the concept of AI but are not really on the ground getting their hands dirty with research experiments.
-One reason why research progress can be slow is that academics tend to get lost in the minutiae, asking low-level questions like “how do we tune the regularization term in Max-Ent algorithms to make it easier to use”. 
-Such questions have driven much of the AI breakthroughs of the last decade. But 10 years from now, if we are still primarily concerned with these questions and not asking increasingly philosophical questions of identity, creativity, consciousness, and getting agents to dream as humans do, that would be a great disappointment to me. 
 utilizing Deep Learning is still much of an art than a science, which means that developing something challenging like AGI will require engineers and researchers of such profound intuition and skill if they are going to rely on methods that are not fully mature.
 Without clear understanding of natural data and the models we train on it, we have to rely on pure empiricism - it is effective and will eventually work, but is simply kind of slow.
- 
-
-Most academics are more concerned with claiming credit for fairly blasé ideas for creating powerful systems than actually building powerful systems.
-
 
 I’ve reviewed close to a hundred papers now and read close to a thousand.
 
 Surface Level Statistics vs. Symbolic Manipulation
 
-Rule-based methods have often been offered up as the solution to the shortcomings of ML. They go by many names - symbolic AI, structural causal models, reasoning-based systems. ML critics such as Gary Marcus, Judea Pearl love to throw shade at machine learning, arguing that curve fitting can never capture the complexity and generality of logical operations on symbols. 
 
-The critics rightly point out that neural networks are currently quite brittle in ways humans are not. Often, astoundingly brittle. 
+## Academia vs. Industry
 
-Take, for example, the following task: you read some gas prices on a sign and want to compute the price change from last month. The reasonable, “hybrid” approach would be to use Machine Learning to parse the “symbols” from the image - e.g. using optical character recognition to read the price $3.70. From there, we rely on good old-fashioned Software 1.0 programming: we use a database to store last month’s gas prices, look up that price and perform numerical subtraction.
+Academia regards industry's growing influence over AI as problematic, because they are beholden to capital interests.
 
-In contrast, the end-to-end approach sounds absurd. A model looks at two images and outputs the differences in prices - no intermediate subtraction or even understanding that there are numbers. This approach might eventually work with a large amount of data, but much like the Prisoners in Plato’s Cave, our current ML methods will likely never understand the true symbolic nature of the images - that each image contains a numerical price and we are to subtract the prices. 
+In a recent workshop hosted by Stanford HAI, Jack Clarke noted that the big drivers of progress in the last decade have been compute, infrastructure, and scaling up prior models rather than inventing entirely new ones. None of these are typically rewarded by academics, and as a result academics have fallen behind.
 
-Marcus draws an analogy to The Allegory of the Cave: people inside a cave are holding up puppets, and a fire illuminates the cave so that shadows of the puppets appear on the walls. Some prisoners are facing the walls and only see the shadow. The shadows represent observations, but the true nature of the shadows is the puppets. You can make deductions on how the shadows will move based on a lot of observation of how they tended to move in the past, but until you truly understand how the shadows are created - the existence of the puppets and the optics, your understanding will only be cursory and forever limited to what you have already seen.
-
-
+academic culture is not well-structured to invest in the long term efforts. The constant churn of grad students optimizing for paper publications on novel ideas rather than pushing a "Manhattan Project". Another social woe is that powerful technology tends to make lives worse for people who don't have much participation and stakehold in creating that technology.
 
 
 Self-Driving Cars Are Still Kind Of Dumb
 
+
+
+Most academics are more concerned with claiming credit for fairly blasé ideas for creating powerful systems than actually building powerful systems.
 
 Cost
 
@@ -109,20 +130,9 @@ We Still Don’t Know How to Create AGI
 
 
 
-Many researchers have called for our systems to utilize more assumptions in our models, either in replacement of or in addition to huge amounts of data. Depending on who you are speaking to, this is called “causal reasoning”,  “symbolic methods”, “interpretable models”.
-
-
-
 knowing how to build a superhuman chess player does not mean we know how to build a human-like mind that also knows how to play chess.
 
-The “operating system”’s role is to coordinate the execution of multiple applications simultaneously. Furthermore, there are big integrative questions here. Do we build some kind of “hierarchical” controller that decides which “application” to run? What applications do we pre-package the system with, and what if we need to learn a new application? 
 
-Even if we had all the individual pieces of Moravec’s landscape above, there’s still the challenge of how all these “intelligence” applications coordinate with each other to realize a system that can borrow 
-The process of executing some application, we receive a stream of information. 
-
-these capabilities sometimes feed into one another to enable each other. For example, memory can aid learning. When we sleep at night, our brain replays memories to us - jumbled together in the form of a limited consciousness experiencing dreams. Dreaming is thought to be important to the learning process. But if these pieces are dependencies of each other, how do we approximate these functions separately?
-Is Common sense reasoning an individual module, or an operating-system piece that talks to other modules? Does it even make sense to impose a hierarchical control scheme where the “operating system” asks various pieces (curiosity, planning, etc) to perform their specialized function, like a conductor at an orchestra? Or is it just a cacophony of neural regions, like a jazz band where nobody is really “in charge” but the whole thing works out anyway?  
-As was shown in recent years of AI research, the water level on AI rises on translation and driving, yet each of these solutions does not offer us much insight by way of making progress on all the other problems in Moravec’s landscape.
 
 Academic Culture
 
@@ -182,39 +192,7 @@ In machine learning, it is only possible to “understand” a discrete concept 
 Likewise, we must draw an imaginary boundary separating “what neural nets can do” from “what neural nets cannot do” - one cannot fully understand one without the other.
 
 
-In the previous chapter we discussed how general methods can get even mroe general when they subsume the design process itself - we can go increasingly meta. While this principle singularly explains why ML works (use data, make fewer and fewer assumptions), it gets exponentially more expensive each time we attempt to go up the “meta” optimization hierarchy. 
-
-Furthermore, even if the high level recipe is obvious, execution is everything and it may be quite challenging to formulate problems in the right way. There are countless minutiae of obstacles that appear once you get down to the implementation details. For example, multi-task systems - things that are supposed to handle multiple different types of inputs - can sometimes from catastrophic forgetting, where the acquisition of one knowledge annihilates knowledge of how to do another (as opposed to an optimistic story where they help each other):
-
-
- 
-Optimizing a single Decision vs. lifetime of decisions vs. entire evolutionary history of all decisions
- 
-Behavioral Process
-Optimization Criterion
-(how to make it better)
-Inference Time
-Training Time for improving the process
-L1 Single image rollout
-Differentiable loss +Feed-forward net (CNN, MLP) 
-50ms
-hours
-L2 Single episode of experience (inference)
-Sequence net (RNN, Transformer) + Differentiable loss
-5s
-days
-L3 Single lifetime (sequence of episodes)
-Very big sequence net + differentiable loss
-500s
-weeks
-L4 Generations
-(Sequence of lifetimes) 
-Evolutionary Strategies / Meta-Optimization
-(desirable evolutionary trajectory)
-50000s
-months/years
-
-Research Loop 
+In the previous chapter we discussed how general methods can get even mroe general when they subsume the design process itself - we can go increasingly meta. While this principle singularly explains why ML works (use data, make fewer and fewer assumptions), it gets exponentially more expensive each time we attempt to go up the “meta” optimization hierarchy.
 
 
 
