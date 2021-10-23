@@ -8,6 +8,26 @@ reference-section-title: References
 *"The highest and most beautiful things in life are not to be heard about, nor read about, nor seen but, if one will, are to be lived."*
 *- Soren Kierkegaard*
 
+Robotics and animation approach how to imbue non-living material with lifelike qualities - just using different tools. I look forward to the day that the tools are one and the same, where AI tooling has become so "high level" as to resemble artistic software.
+
+
+Take for instance, pointilism animations of cats, where we simplify the essence of life to depict cat-like motion in a very abstract rendition of a cat. It is at the same time, devoid of information but also very lifelike and rich.
+
+
+If you jiggle a few black dots in a temporally correlated manner, it creates the illusion of not only form, but also curiosity and sentience
+
+https://twitter.com/pickover/status/1447712832779431936?s=20
+
+
+
+
+
+As Picasso once showed with his famous Bull painting, the distillation of human understanding into its most simplistic form is to capture a specific "lens" of reality.
+
+Peer through that lens, and you will see life, general intelligence, affection.
+
+
+
 An agent that plays jungle basketball would likely have no need to create art - it doesn’t win the game, why would it ever need this?
 
 historical artifacts are to be treasured because they contain knowledge, or have fiat value.

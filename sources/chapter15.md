@@ -14,9 +14,19 @@ Appreciation of art
 Desire to understand “what is it?”
 
 
-<< discus recording productivity software that captures game data >> 
+about how the world works, we give the simulated critters a glimpse of our world through portholes that bridge our reality and theirs. They have the means to prod and discover what opportunities and challenges exist in ours, as we have the means to prod theirs. At this point, the systems begin to be commercially interesting and will be able to solve our problems.
 
 
+In order for agents to find value in discovering how another world works, they have to find intrisic joy in discovering knowledge. This is something that probably arises through the evolution of such a preference.
+
+We want these AI systems to be relatable to humans, so we must bridge realities some how. 
+
+Want them to take interest in the world we live in, much like we take interest in the world they inhabit. 
+
+Ask the agents to brainstorm futures for our own society, to reflect on the state of our world and hypothesize where it might be going, or to develop new theories for why our world is the way it is.
+
+
+ask the model "how might Barack Obama react to an observation X?"
 
 
 Discuss robots, sensory experience in our world,

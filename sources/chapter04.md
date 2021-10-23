@@ -142,6 +142,11 @@ At the end of the day, Software 2.0 requires an optimization objective. What is 
 
 Artificial Intelligence research today largely focuses on thinking about high level capabilities that are useful to humanity - how we achieve value alignment with humans, artificial creativity, innate curiosity, assisting the elderly, forecasting the future, learning efficiently. However, these are all pieces of the final system that we want - there is little discussion today on how we go about integrating all these ideas into a single, cohesive entity that is capable of expressing all these capabilities at once.  
 
+
+This can be complementary to human-in-the-loop. One could imagine a large model like this helping with automating human-in-the-loop decision making, by providing external knowledge that helps predict how a human would rate a robot or some video data.
+
+
+
 ## Unsupervised Reinforcement Learning
 
 When we learn to code, it's not sufficient just to watch a bunch of youtube videos about programming. We must do it ourselves, get stuck, overcome new surprises to uncover what we don't know we don't know.
@@ -167,17 +172,31 @@ We want to have a lot of cheaply acquired data (e.g. youtube videos)
 A small amount of human-labeled expert data (e.g. humans saying what the correct decision should be)
 And a very tiny amount of embodied interaction in an environment (e.g. a robot physically trying things out and discovering things for itself from the world)
  
- 
+## Challenges of General Evaluation
+
+(mention your experience working on BC-0 and how difficult it was to evaluate a general system)
+
+hereditability scores are over estimated when effect is studied in a single environment controlled, because you basically minimize the variance provided by the environment (it is 0). When you study the same genetic variation over more environments, your measurements of the average effect of a gene is now averaged over different environments, which lowers the hereditability score! one consequence of this to ML is that when we control too much (e.g. testing multiple algorithm on single env ), we overestimate the contribution of the algorithm!
+
+Maybe, once we look at a lot of environments / lots of tasks, the contribution of algorithms diminishes drastically
+
+
+its not meaningful to ask what a gene does, you can only ask what a gene does in context of its environment (e.g. testosterone does not cause aggression, it merely amplifies aggression responses) . one implication of this is that maybe we are not assessing our learning algorithms in the right way -we have to study them in the context of the environment they are evaluated on.
+
+
+
  
 Some luminaries in the field 
 Summarizing some views:
 Jeff Hawkins - scaling up a simple algorithm (not neural networks and backprop though) should build AGI, and all you need is the neocortex. 
 Schmidhuber - the brain is a world model, prediction of the future enables all else
 Yann LeCun - LeCake - bulk of intelligence formed by unsupervised learning (cake), small amount of supervised learning (labeled supervision), very small amount is reinforcement learning (RL)
-<TODO - interview some others, more diverse representation>
+
  
 <!-- The Treachery of Images is a 1929 painting by Belgian surrealist painter René Magritte where a picture of a smoking pipe is labeled “Ceci n'est pas une pipe”. 
 A recent experiment from OpenAI has shown that a image + language understanding model will look at an apple with a sign saying “pizza” and say that the image is of a pizza with extremely high confidence. Ceci n'est pas une pizza -->
  
 <!-- To get really dynamic behavior, we want to generate algorithms on the fly - i.e. forming a new policy with complex decision making from just a few examples.
  -->
+
+

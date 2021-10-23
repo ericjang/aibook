@@ -1,14 +1,46 @@
 ---
 chapter-number: 12
-title: Pettable AI
+title: From Wolves to Retrievers
 link-citations: true
 reference-section-title: References
 ---
 
+<!-- In the Book of Genesis, God creates the  -->
+
+How do we make AI "nice"? Academics love to use formal definitions like "value alignment" and ""
+
+Perhaps we don't need to overthink it, and once we have a model that understands enough commands to generalize to novel instructions, we can simply ask it to emit a policy that is "nice".
+
+
+
 <chapter: talk about play and childlike behavior and animal play?>
+<!-- this chapter needs substantialw work in fleshing out a more cohesive outline, as does 13-16-->
+
+Could humans even contemplate their own uniqueness nature of intelligence if there weren't a large animal kingdom of dumber organisms with which humans could compare themselves to?
+
+
+## Spontaneous Generation of Play
+
+
+How are  children so capable of synthesizing the ability to pretend the floor is lava?
+
+
+
+Why create animals with limited intelligence and wildly different sensory modalities and physical morphologies from humans? 
+
+Complexity in he world, with certain animals filling certain niche.
+
+
+<!-- emergence of open-ended play from survival games? -->
+
+Dmitri Belyaev - famous fox domestication experiments selecting for tame and friendly foxes resulted in also selecting for juvenile features. Over the course of s
+
 
 Jungle Basketball - play behavior when agents are younger.
 
+## How a Dog Perceives the World
+
+Cognitive scientist Alexandra Horowitz, says in her book *Inside of a Dog*: “including not just the scene currently happening, but also a snatch of the just-happened and the up-ahead. The present has a shadow of the past and a ring of the future about it.”
 
 Cuddly by experience and asssociation.
 
@@ -16,9 +48,9 @@ A hammer does not exist to a dog - it has no significance because dogs dont act 
 Babies don’t understand that which is irrelevant. 
 Relying primarily on smell conveys a very different understanding of “the present” than what humans do - humans rely mostly on vision, letting them see a single instant in time. In any moment, dogs will smell a lingering trace of what we perceive as the past, and an oncoming whiff of what humans perceive as “the future”.
 
-“including not just the scene currently happening, but also a snatch of the just-happened and the up-ahead. The present has a shadow of the past and a ring of the future about it.”
 
- we will attempt to create dogs by domesticating wolves, just as our human ancestors did eons ago. Rather than embody agents in our world, it is simpler to send humans into their world using VR. We can have virtual canines interact with real humans through a VR interface, pet them, cuddle them, and so on. Through this process, we try to make the AI useful and socially aware of real humans by designing virtual pets.
+
+<!-- we will attempt to create dogs by domesticating wolves, just as our human ancestors did eons ago. Rather than embody agents in our world, it is simpler to send humans into their world using VR. We can have virtual canines interact with real humans through a VR interface, pet them, cuddle them, and so on. Through this process, we try to make the AI useful and socially aware of real humans by designing virtual pets. -->
 
 Implementing Shyness
 
@@ -123,5 +155,4 @@ Another is to make the game competitive with respect to skill - Valorant players
 
 Summary:
 Technical goal: Capturing the notion of “friendliness” / the affection of dogs into software
-
 

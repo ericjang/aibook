@@ -4,12 +4,50 @@ title: Rethinking Work
 link-citations: true
 reference-section-title: References
 ---
-Karl Marx often spoke about the concept of *alienation* - where people no longer build craft of their own, in an end-to-end manner, but participate as cogs in a massive, globalized economic machine where all roles are hyper-specialized. People lose their sense of ownership and autonomy, and thus their connection to humanity.
+
+If AI technology is as profoundly impactful as its creators hope it will be, then we have a moral imperative to do more than just science: we must also contend with the social consequences. People are generally excited about new technology, but anxious about their own lives rapidly changing - it is for this reason that in today's political climate, many people are worried about AI technology "taking away their jobs".
+
+Some technologists, like Google's chief economist Hal Varian, have downplayed concerns about job automation. He points out there are labor shortages for helping aging populations, and that AI can enable humans to focus on more interesting work. While these are technically true, this framing is not super reassuring, because it centers the discussion around the needs of the overall economy, not the needs of the individual laborer (whose primary concern isn't whether there are enough people to take care of an aging population, but whether they can earn a paycheck). I remember in one of his presentations, I raised my hand and asked Hal how he felt about "a small cabal of AI wizards controlling all of economic output" and he dismissed my question as "overly cynical". 
+
+## Alienation
+
+Karl Marx often wrote about the concept of *alienation*: when workers transition from building their own craft end-to-end to participating as highly specialized cogs in the modern industrial machine, they lose their sense of ownership and connection to the products of their labor. Take for example, a traditional watchmaker who builds timepieces from scratch and takes pride in his handiwork, while an unskilled laborer on an assembly line toils all day packing a box with goods they don't recognize, to be sent to strangers they have never met. The laborer may not even know *what* exactly he is taking part in the production of: he has been *estranged* from the meaning of his work, from the pride of a finished product, from their fellow workers, and ultimately, his humanity.
+
+[^sidenote1]:
+	Karl Marx wrote *a lot* on the nature of capital and labor, so any attempt to summarize his views on alienation will necessarily discard a lot of nuance. 
+
+One way AGI technology might be rolled out 
+
+
+
+
 
 How will ASI technology distort the social fabric of socioeconomics, and of human relationships itself?
 
+The solution is simple, but not easy: we need to make access and control of AI technology democratic, so that when a farmer wishes
+
+Suppose a farmer wishes to buy a general-purpose robot to help around the house. They want a product that makes their life easier, without feeling like their lifestyle is being threatened.
+
+and if they make a change in their own routine to accomodate new technologies, they have the autonomy to make that decision, as opposed to being forced into making those changes by some giant corporation. People want to have a say in what work they are doing.
+
+In those respects, a general-purpose robot, which can do any chore that a human asks, may be the antidote to the *alienating* nature of highly specialized robots, which conform humans to it rather than the other way around.
+
+Ultimately, AGI will be quite palatable if the builders focus first on what *people* want, not what corporations want. As with all things - from academia to industry to governmet - it is about power and control, and should make sure that the people most worried about being replaced have the sense that they are empowered to use automation how they see fit, as opposed to being forcibly displaced and having to do something else once technology takes their job.
+
+This strategy is not unique to general purpose robots, but will be much easier with a flexible technology versus a specialized industrial robot, which is rigid and uncompromising.
+
+
 
 It is inherently human to ask “what’s in it for us? What is humanity’s place in a post-ASI world?”
+
+If the benefits of automation were distributed equally and people were paid the same afterwards, then yes - people would be excited with increased productivity. economic productivity != individual productivity
+
+
+In some cultures with aging populations, there is such an abundance of work to do that society is more receptive to automation. So while I think there are very rational reasons for people to fear automation, I think there is a narrative element to it that could flip in the future
+
+If you believe the https://en.wikipedia.org/wiki/Ephemeralization perspective on "software is eating the world", then one way automation becomes democratized is that everyone has access to high-leverage tools (e.g. software). Nearly everyone today has access to computers & all of human knowledge
+
+the only problem is that "agents of inequality" are no slackers either, and use the same tools + capital to leverage their productivity even further
 
 
 
@@ -18,9 +56,9 @@ Power of intrinsic motivation: students primed with the intrinsic joy of creativ
 Extrinsic objectives (fame, power, money) often stifle creativity. When you optimize for companies that maximize share holder revenues, you leave out all the other solutions for perfectly viable businesses that do super interesting things.
 
 
-general-purpose robot would be huge - 
-on a given morning, you might ask a general-purpose robot to rife through all your old photos and documents and scan them into digital copies, take care of the termite infestation in the attic, sweep the roof gutter for leaves, sort through junk mail, throw away all the food in the fridge that has gone bad.
-none of these tasks justify a specialized robot - but life is full of small chores
+on a given morning, you might ask a general-purpose robot to rife through all your old photos and documents and scan them into digital copies, inspect the perimeter of the house for ants, sweep the roof gutter for leaves, sort through junk mail, re-organize the fridge and pantry, brush the cobwebs from every single corner of the house. None of these tasks justify a specialized robot, but taken together, it's a lot of maintenance work. It's why wealthy people hire nannies and groundskeepers. Much like how reality is a fractal of seemingly unending complexity, the corollary is that life is full of small chores.
+
+In rural places like farms, the amount of chores is still larger.
 
 
 On the opposite end of the emotional spectrum of “magic software” is the narrative of AI and robots coming to take our jobs away and increasing the gap between the haves and have-nots. Unlike “AI singularity” risk, this is a very real fear.
@@ -45,9 +83,7 @@ We already live in this dystopia - no AI required!
 Simulator for complex, survival organisms can allow us to tackle very hard problems.
 Solve nutrition - complex models of nutrition and survival can lead to a way to model health, epidemiology, and even how quality of education interacts with quality of nutrition.
 
-
 Anticipate needs of a person
-
 
 Skincare routines take awhile - a robot could gently apply moisturizer to your face while you’re sleeping, saving you 15 minutes in the morning.
 
@@ -192,8 +228,25 @@ We would be okay with brain uploading and original being destroyed. Our identity
 you know how many cultures (Mexican, Buddhist, etc.) have rituals and such to remember the dead?
 it would be interesting if technology effects new cultural changes on how we celebrate and remember the dead.
 
+## How Competent Should Your Housekeeper Be?
 
+suppose you get a general agent to do household tasks that you are too busy or lazy for , such as washing dishes. The robot does it exactly the way you like it. I'm personally not very good at washing dishes - sometimes my attention to detail is lacking. I would be fully fine with a robot being better at me in washing dishes.
 
+One might ask the same question - if my housekeeper or butler or babysitter or hired help is smarter and more competent than I am, would I feel threatened by it?
+
+What about cooking? How would I feel about having a robot be able to make tastier food than I ever could? 
+
+What about administrative tasks, like scheduling my calendar or remembering important meeting details?
+
+Eventually, we might get to a point where the AI assistant you pay a subscription for is more competent in every way than the client themselves. Then the existential dread starts to set in.
+
+Robots would have to be deliberately not competent at the things their human owners pride themselves at being good at.
+
+But maybe the knowledge that the robot *could* be good if it was set that way is enough to cause the dread?
+
+## Tricky Legal Questions
 
 For example, DeepFakes, Copyright law (is it okay to clone the likeness of Jay Z), automation, job retraining, wealth redistribution will become hot-button issues well before we even begin to contemplate laws around the treatment of robot pets that can feel pain.
 
+
+how do we think about the ethics of suffering?

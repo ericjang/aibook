@@ -1,6 +1,6 @@
 ---
 chapter-number: 5
-title: Reality is a Fractal of Detail
+title: The Struggle to Know Anything
 link-citations: true
 reference-section-title: References
 ---
@@ -120,7 +120,8 @@ A general intelligence simultaneously knows nothing, and yet know everything.
 
 The Treachery of Sandwiches
 
-<hot dog, >
+A racoon rummaging through food scraps has an entirely different understanding of the difference between hot dogs and sandwiches. It does not care about whether the bread comes in two pieces or one, or whether the meat is a sausage or a patty. It knows that it is good to eat, and its problem solving skill is highly optimized for finding good things to eat.
+
 
 To illustrate how difficult it is to truly know anything 
 
@@ -259,6 +260,12 @@ Suppose you want to build a robot that can grasp objects in a stable manner.
 
 
 This is where AI excels : in reflecting human preferences, in imitation of human expert behaviors, it lifts the burden of having to be explicit about what we want or how we define something to be a cat or not (human provides label saying something is a cat, but does not tell the machine how to do it).
+
+## What is a Task?
+
+At Google, you would not believe how many millions of dollars in Googler salaries were wasted on the definitions of "robotic tasks".
+
+Multi-task systems do multiple things
 
 
 ## Executing on Ideas

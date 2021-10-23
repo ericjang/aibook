@@ -1,6 +1,6 @@
 # Edit variables below to customize book
 booktitle = Robot People
-booksubtitle = A 10-Year Roadmap to Artificial Survival Intelligence
+booksubtitle = An Ethological Approach to Artificial Intelligence
 bookauthors = Eric Jang
 bookfilename = book
 
@@ -12,7 +12,6 @@ SOURCES := sources/index.md \
            sources/chapter03.md \
            sources/chapter04.md \
            sources/chapter05.md \
-           sources/chapter05_1.md \
            sources/chapter06.md \
            sources/chapter07.md \
            sources/chapter08.md \
@@ -37,7 +36,6 @@ CHAPTERS := sources/chapter00.md \
             sources/chapter03.md \
             sources/chapter04.md \
             sources/chapter05.md \
-            sources/chapter05_1.md \
             sources/chapter06.md \
             sources/chapter07.md \
             sources/chapter08.md \

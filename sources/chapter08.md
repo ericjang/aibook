@@ -1,11 +1,133 @@
 ---
 chapter-number: 8
-title: Prior Research on A-Life
+title: Engineering Principles for Building General AI
 link-citations: true
 reference-section-title: References
 ---
+<!-- describe the high level architecture of the AGI system and lessons learned-->
 
-The pursuit of creating life from scratch inspires many people from all sorts of fields, from biology to robotics to art to theology. Just as "AI" means different things to different people, so does "A-Life". This chapter is a summary of prior work on A-Life, and their relevance for what I hope to accomplish. 
+This chapter summarizes what I've learned from 5 years of doing research at Google Brain. I've distilled numerous mistakes I've made.
+
+
+It's guided by my experience of seeing which research ideas stand the test of time, which ones actually get implemented and used in large-scale systems.
+
+I've come up with 5 engineering principles that help me to solve hard problems in AI, especially with limited resources. 
+
+On one hand, we have to build a system of incredibly high complexity, but rely on tools that.
+
+
+There is a perpetual tension between ambitious ideas that are just a
+
+One of the skills of a researcher is knowing how much complexity to tackle 
+
+Stick with these principles, and "success is guaranteed".
+
+Ways to 
+Cut through complexity.
+
+## Principle 1: Focus on the Data
+
+The biggest wins in making an ML system work come from high-quality data. Many researchers in sub-fields of ML focus on improving the efficacy of algorithms with respect to a fixed dataset. However, if what you care about is the results, then gathering more data is often cheaper and simpler. 
+
+
+## Principle 2: Use a Good Data Sponge
+
+Deep Neural nets are good data sponges, especially when trained using supervised learning. 
+
+<!-- Just ask Generalization essay -->
+
+
+## Principle 3: Evaluate in Simulation
+
+<!-- Robots Must be Ephemeralized essay -->
+
+<!-- add custom drawing of domain randomization ? -->
+
+<!-- add image of sim2real ? -->
+
+
+## Principle 4: Don't Be Afraid to Label some Data
+
+unsupervised learning can be a useful tool to compress representations, but often these representations can be made better with a little bit of labeled data enforcing exactly what semantics you want the model to retain.
+
+A lot of research work aims to remove the need for humans to supply labels. However, labeling data is relatively inexpensive, aided by modern technologies. 
+
+
+You can even use techniques like "label propagation" and clustering to train a model on some data and use that to label the rest of your data, or triage which data points are most likely to need your input.
+
+
+## Principle 5: Be a Full-Stack Engineer
+
+In my experience wearing both infrastructure and modeling hats, it's important to do both. If you do modeling without infra, you can miss simple solutions like simply adding more data / cleaning up data (see principle 1). If you iterate on data without modeling, it can be hard to get an intuition of what kinds of data best improve your model, or how the model qualitatively changes per tick of data. My favorite collaborations have been where all colleagues are "full stack" on both the infra aspects and the modeling aspects, with every team member knowing the whole codebase. 
+
+Avoiding thinking about a part of the codebase can bias your perspective on what is important to work on, and diverting the team's resources.
+
+Avoid having a part of your codebase that you can’t or won’t look into when things go wrong. This adds a huge amount of time sink into your debugging process, because you must be constantly questioning the nature of the unive.
+
+It’s like trying to do experimental physics when you know that at any moment God might tweak the rules of physics in imperceptible ways to fuck with your experiments. 
+
+Arguably, research itseflf and DNNs are one giant black box that no one really knows how to debug, so there’s a case to be made for minimizing one’s exposure to deep nets (they take a long time to train)
+
+At Google, there were some pieces of infra that were so ugly or complicated that only a few people knew their internals and mostly everyone was just a user, but often this piece of infra broke in ways that affeced downstream users, or caused regressions to come out of nowhere.
+
+
+
+People have naturally different aptitudes (I myself am terrible at attention to detail)
+
+A full-stack team also gives you the comfort that people can shift naturally to the true bottleneck in the stack, instead of over-developing.
+
+## Build Scrappy Infra
+
+Infrastructure should be treated as research hypotheses - to be tested for its usefulness. To that end, it's often faster to build a small-scale system or extend an existing system in a hacky way to try out experimental ideas.
+
+Once these ideas are validated, you can use that as supporting evidence for a large-scale system, and you also have a baseline to compare the large-scale system to. 
+
+If you find yourself writing infra for more than a couple weeks that hasn't demonstrated consistent value, then it's probably over-designed.
+
+
+
+## Principle 6: Scale Up Carefully
+
+Optimizing for life and death directly in a super general, super hard environment is a recipe for slow progress. Rather, start by building simple environments that you know others have solved, and work on scaling up difficulty incrementally.
+
+
+
+
+## Neuro-inspired algorithms
+
+Neuro-inspired learning algorithms, and even many reinfocement learning algorithms actually get in the way of deep neural network's ability to sponge up vast amounts of data.
+
+
+
+
+
+How can we leverage insights from ecology and neuroscience while reconciling the empirical observation that ignoring brain-inspired architectures has worked so well for reinforcement learning?
+
+<!-- Just as "AI" means different things to different people, so does "A-Life". This chapter is a brief history of A-Life research, and its relevance to what I'd like to accomplish. -->
+
+
+The pursuit of creating life from scratch inspires many people from all sorts of fields, from biology to robotics to art to theology. 
+
+## Don't Re-invent the brain
+
+Neurobiological software stack and Piaget's roadmap of child cognitive development is an instructive roadmap for how more advanced behavior might emerge, but we don't have the system from scratch.
+
+
+
+For instance, it is often tempting for engineers with neuroscience training to suggest incorporating top-down reasoning into deep neural networks for computer vision, with the motivation that the brain has bottom-up, lateral, and top-down connections guiding the flow of information, with a mix of inhibitory and excitatory connection. However, rarely do these methods outperform state-of-the art deep learning methods like "Residual Networks" and "Transformers".
+
+
+The complexity of the neurobiological stack should be appreciated, but we should not be so arrogant as to assume that we can translate its design correctly into code.
+
+<!-- side by side comparison of top-down connections in brain vs. a ResNet -->
+
+
+<!-- 
+I am not so arrogant as to suggest that we can simply ignore Piaget's research, 
+ -->
+
+
+
 
 There are three “domains” with which one can choose to embody Artificial Life - Wet Alife, Hard Alife, and Soft Alife. I'm borrowing this taxonomy from Bert Chan, a fellow A-Life researcher. 
 
@@ -38,6 +160,15 @@ A checklist for A-Life Substrates. Soft A-Life lacks the rich, complex physics w
 
    : A-Life Substrate Tradeoffs
 
+Reproducibility 
+
+Ultimately it comes down to a tradeoff between "richness" of the data (which real world provides in spades) and the ease of iteration, experimental evaluatio, and scientific reproducibility.
+
+Given that careful measurement is absolutely needed to tackle as open-ended and ambitioos of a challenge, with probably lots of optimization and iteration, it makes sense to prioritize a software-first strategy.
+
+This is not without its share of challenges - we must solve the very challenging problem of making software as similar to reality as possible, much like creating "The Matrix".
+
+
 # Soft A-Life
 
 Soft A-Life is essentially computer simulations of wet or hard alife. By simulating things in a computer, we don’t have to deal with messy details like a robot servo breaking, or a synthetic genome unraveling at an inopportune time due to the acidity of its environment. Doing things in software removes a lot of the tricky engineering problems that actual biological life needed to figure out but we don’t find to be super interesting in our quest to understand intelligence. It’s not feasible to wait for billions of years for a cell to evolve into a thinking organism; instead, we already can simulate millions of years of evolutionary time for RL experiments.
@@ -61,12 +192,6 @@ https://motherboard.vice.com/en_us/article/mbjz43/setting-the-record-straight-ab
 
 # Competitive Self-Play and Other Nash Equilibrium Finding Algorithms
 
-Similar to DeepMind Parkour paper
-https://arxiv.org/pdf/2010.03848.pdf
-
-AlphaGo & AlphaGo Zero
-Self-play can turn raw compute power into data.
-
 
 Competitive Self-Play is one of the research areas I'm most excited about, because it gives us a way to turn "high-capacity, unconstrained models" from a nuisance (easily finding a wrong explanation) to an asset. an agent's failure to generalize can be exploited by another agent (for instance, if an agent learns to ignore the color yellow, a predator can turn yellow to evade detection).  
 Evidence that challenging environments leads to robust “intelligence” 
@@ -79,9 +204,6 @@ Finding Applications for A-Life
 Unfortunately, A-Life remains to this day a niche discipline that is not taken seriously by people who are building technology to, say, improve people’s lives. A-Life works are still very much in the realm of media art, evoking an illusion of life-likeness but not being close to producing creations that have intelligent capabilities useful to our daily reality. 
 
 Unlike progress in neural network training, A-Life systems are not being used to provide any actual useful technologies to people. There are some useful algorithms developed by the ALife community like genetic algorithms and MAP-Elite search, but these methods are more about black box optimization than actually building living systems.
-
-
-
 
 Computational Embodiment gap : discuss how existing artificial life research that leverages intelligent organisms does not really know how to bridge embodied computation in cellular automata with the higher-level neural network architectures people use for deep rl. We dont really know how to subject deep neural network to the same selection pressures that real networks face. There is a need to balance correctness with pragmatism - we probably need to rely on backprop and sgd as an optimizer.
 
@@ -104,7 +226,6 @@ Computational embodiment gap - most ALife projects do not perform computation di
 
 Rather than specify the brain structures and how they perform various information processing roles and replicating a full chemical and spiking signalling , we will start by simply trying to replicate behavior, and hope that the right structures will emerge from our substrate constraints..
 
- 
 
 Classical and mathematically-minded AI researchers will argue that it should be possible to build higher-level intelligence without the evolutionary baggage, much like making an airplane without a bird. 
 
@@ -148,15 +269,6 @@ forage during the day, store excesses and recover during the night.
 Switching between catabolic and anabolic systems are expensive. So brain needs to anticipate environmental shifts.
 
 
-Tracking the flow of energy in time is one way to do causal attribution / discovery. 
-
-DeepMind’s Parkour paper 
-Challenging environment forces emergent low-level skills that are more robust than just training in easy environment
-
-Competition and Self-Play
-
-
-
 
 OpenAI 
 
@@ -194,7 +306,6 @@ It might represent an explicit optimization objective, e.g. maximize some fitnes
 argmax_{animal decisions} criteria(animal decisions)
 argmax_{genes} criteria(genes)
 argmax_{physical laws} criteria(universe) 
-
 
 The state of the world “evolves” according to the laws of physics. It gives rise to biological evolution, in which some lifeforms disappear from the gene pool quicker than others. 
 

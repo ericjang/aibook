@@ -9,24 +9,35 @@ reference-section-title: References
 
 The previous chapters discussed the state of AI research, past and present. Now we talk about the future, and how to build it.
 
-AI researchers typically test their algorithms against disembodied, high-level cognition tasks: holding a conversation, planning a vacation, understanding people, composing a symphony, choosing pieces on a Go board. Animal-level capabilities like eating and mating and hiding from predators are regarded as ancestral baggage that an AGI may not require. If a software can compose a symphony or console the bereaved or direct corporate strategy, why do we care whether it is able to spread butter on toast or replace the passenger side mirror on a car?
+When we discuss the construction and evaluation of general intelligence, we often think of disembodied, high-level cognition tasks: holding a conversation, planning a vacation, understanding people, composing a symphony, choosing pieces on a Go board. Animal-level capabilities like eating and mating and hiding from predators are regarded as ancestral biological baggage that "intelligence from first principles" may not require. If an AGI can compose a symphony or console the bereaved or direct corporate strategy, why do we care whether it is able to spread butter on toast or replace the passenger side mirror on a car?
 
-If the reader takes away anything from the previous chapters of this book, it is that we have intelligence backwards. The smorgasbord of “cognitive” capabilities AGI researchers love to focus on are *only* meaningful in the context of survival and other corporeal behaviors. Without the primal environmental demands for these capabilities, these capabilities are poorly defined and cannot be trivially integrated together into a cohesive, functioning human-like intelligence. 
+If the reader takes away anything from the previous chapters of this book, it is that we have intelligence backwards. The smorgasbord of “cognitive” capabilities AGI researchers love to focus on are *only* meaningful in the context of survival and other corporeal behaviors. Without the primal environmental demands for these capabilities, these capabilities are poorly defined and cannot be trivially woven together into a cohesive, functioning human-like intelligence. 
 
 As Hans Moravec said, *“Encoded in the large, highly evolved sensory and motor portions of the human brain is a billion years of experience about the nature of the world and how to survive in it. The deliberate process we call reasoning is, I believe, the thinnest veneer of human thought, effective only because it is supported by this much older and much more powerful, though usually unconscious, sensorimotor knowledge."*
 
-In order to create the veneer that is Artificial General Intelligence, we must first solve the problem of artificial survival. Let’s jump in.
+In order to create the veneer that is Artificial General Intelligence, we must first solve the problem of artificial survival. All of this is purely hypothetical, so in the remainder of the book I hope to outline a research agenda that tests this hypothesis. Let's jump in.
+<!-- 
+Rather than designing an intelligent system, we will accept that complex ecologies will necessitate capabilities that human engineers cannot forsee. 
+craft ecological niches that demand the development of increasingly intelligent behavior and let evolution run its course.  
+ -->
+
 
 # Why Games?
 
-The first piece of the ASI engineering roadmap is to build a challenging video game where non-player agents must survive. In order to do so, they must develop simple behaviors like seeking out food and shelter, but eventually more complex adaptations like creativity, memory, learning, and thought. In order to get from today’s “narrow-ish” game-playing agents to agents that are so capable that they give the illusion of general intelligence, we need to pack the environment full of toxins and tools, catastrophe and opportunity. The ASI will learn all behaviors we associate with intelligence from raw undifferentiated computational circuits out of necessity. 
+The first piece of the ASI engineering roadmap is to build a rich set of video games where life and death is an element of gameplay. 
+
+In order to play these games well, agents must develop simple behaviors like seeking out food and shelter, but eventually more complex adaptations like creativity, memory, learning, and thought. In order to get from today’s “narrow-ish” game-playing agents to agents that are so capable that they give the illusion of general intelligence, we need to pack the environment full of toxins and tools, catastrophe and opportunity. The ASI will learn all behaviors we associate with intelligence from raw undifferentiated computational circuits out of necessity. 
 
 Obviously playing games are not the end-all be-all to creating general intelligence - as we discussed in Chapter 7, evolution’s beauty and open-endedness arise from the lack of an explicit objective like “strongest” or “fastest” or even “smartest”. Even so, games remain a good research platform for several reasons. Research Labs like DeepMind have focused on solving games as a way to measure learning algorithm progress on AGI research. 
 
-1. Nearly all games come with a clear, measurable objective with a predefined set of actions and win conditions. Even though there is a single limiting objective, a lot of complex behavior can still emerge, and those behaviors can be repurposed later to solve tasks more aligned with biological survival and existence. 
+1. Nearly all games come with a clear, measurable objective with a predefined set of actions and win conditions. Even though singular objectives can be limiting, a lot of complex behavior can still emerge, and those behaviors can be repurposed later to solve tasks more aligned with biological survival and existence. 
 2. Games are designed to have simple rulesets and a gentle learning curve that humans can figure out quickly. 
-3. Computer games can be simulated in faster-than-real-time, and be re-started over and over again, like resetting a time machine, so we can revisit points in history where different choices would lead to different outcomes. All of these make the training process less computationally expensive.
-4. Games are also fun for humans to play and watch. The entire nation of South Korea was riveted to the televised matches of AlphaGo vs. Lee Sedol in 2016. There’s something terrifying and inspiring about a human prodigy being outsmarted by a sphinx-like machine: inscrutable yet seemingly all-knowing. As ASI researchers, we will be spending a lot of time watching our creations. Evaluating intelligent systems is hard, so being able to compete with human-level intelligence gives us a visceral, qualitative sense of how smart the agent is. Later on, I want to leverage human-in-the-loop intelligence to supervise, discover and influence the arc of evolution. 
+3. Computer games can be simulated in faster-than-real-time, and be re-started over and over again, like resetting a time machine, so we can revisit points in history where different choices would lead to different outcomes. This makes evaluation much cheaper, especially when it comes to determining whether a result is statistically significant.
+4. Games are also fun for humans to play and watch. The entire nation of South Korea was riveted to the televised matches of AlphaGo vs. Lee Sedol in 2016. There’s something terrifying and inspiring about a human prodigy being outsmarted by a sphinx-like machine: inscrutable yet seemingly all-knowing. As ASI researchers, we will be spending a lot of time watching our creations. Evaluating intelligent systems is hard, so being able to compete with human-level intelligence gives us a visceral, qualitative sense of how smart the agent is. Later on, I want to leverage human-in-the-loop intelligence to supervise, discover and influence the arc of evolution, so it's important that humans are entertained when watching the agents in their native environment. 
+
+
+If you die while playing hopscotch, you can't win hopscotch.
+
 
 
 # Jungle Basketball
@@ -65,6 +76,16 @@ Depending on how we set up the software design space to be searched over with so
 
 There are many vital implementation details to get right in setting up the problem that are extremely important for practitioners. The smallest of details - like how the action space is parameterized, or whether we stop agents early that are doing poorly, may not look like a large qualitative change to a casual observer, but can make all the difference between "not working" and "working". We’ll avoid discussing many of these details in this book, but in the Appendix I will include a number of algorithmic ideas to facilitate robust training of this environment.
 
+<!-- more akin to the Mesoamerican ball game from the movie El Dorado, with high stakes and copious amounts of bodily injury to the players -->
+
+## Why not an MMO?
+
+The game has no primary objective - the simulation just runs and runs and people oversee the creation of new critters in ways that they find interesting. Adding humans in the loop solves a key problem: it frees us from the need to program tricky objectives like “the meaning of life”, and simultaneously it provides rich data about how human-level intelligence (actual gamers) explore massive solution spaces. This system will be extended to study all the questions presented in the later chapters. I call this system the “Never Ending Game of Survival”.
+
+<!-- why not an open-ended MMO without an objective? didn't you spend all this time talking about how objectives can be constraining and mispecified? what about a physically realistic MMO game where players control direct the selection of various animals.  -->
+
+<!-- In order to play at a rudimentary level, they will have to learn to move themselves and handle the ball. As they become more capable, they will learn to pick up the ball and throw it with precision.  -->
+
 # Intelligence as a Function of Time and Space
 
 In chapter 7 we discussed that neural systems are evolutionary adaptations to help an organism survive for a certain amount of time, across a certain number of cubic meters of space. Animals with a lifespan of 1 day have no need for long memories, or the ability to use tools, or social intelligence to interact with dozens of individuals, because their lives are so short brief that they don’t have the time to learn new skills and put them to repeated use. 
@@ -100,10 +121,9 @@ As these agents begin to reach a strong level of performance in confined, short 
 
 Agents can win Jungle Basketball if the other agent dies. But what does it mean to “die”? what counts as alive? As discussed in chapter 7, we don’t have a good computable definition of “survival”, and it’s not clear how to prefer animals like homo sapiens over to *e. coli*, or where one genome begins and another ends (man vs fish). We don’t know a computable meaning of life, and so we also do not have a computable definition of death. 
 
+Jungle Basketball does not feature an open-ended objective - to the contrary, a strict objective allows us to side-step the thorny questions of life and death and get agents to learn *something*. Plenty of interesting behaviors can emerge from training agents to optimize for simple objectives in complex environments, even if they don’t perfectly capture the ultimate, intelligence-giving constraint of biological survival. As we iterate on later versions of Jungle Basketball, we can make the environment more ecologically life-like later by bootstrapping on top of the existing agents we have.
 
-Jungle Basketball does not feature an open-ended objective - to the contrary, a strict objective allows us to side-step the thorny questions of life and death and get agents to learn *something*. Plenty of interesting behaviors can emerge from training agents to optimize for simple objectives in complex environments, even if they don’t perfectly capture the ultimate, intelligence-giving constraint of biological survival. We can make the environment more ecologically life-like later by bootstrapping on top of the existing agents we have.
-
-A computational approximation of “death” could be as simple as one agent experiencing too much external forces (e.g. from a fall or impact from another object), or depleting itself of energy so that it isn't able to move. In the initial version of Jungle Basketball, we will not consider the agent’s need for food or energy or sleep. Life is obviously a lot more complicated than avoiding blunt trauma, but it will suffice for now.
+A computational approximation of “death” could be as simple as one agent experiencing too much external forces (e.g. from a fall or impact from another object), or depleting itself of energy so that it isn't able to win the game. In the initial version of Jungle Basketball, we will not consider the agent’s need for food or energy or sleep. Life is obviously a lot more complicated than avoiding blunt trauma, but in engineering, perfect is the enemy of the good.
 
 <!-- 
 An ASI system is bottom-up: building the simplest of bacterial intelligences and prioritizing ecological specialization rather than some measure of “raw intelligence”. I believe that competitive and cooperative survival of "living organisms" is the only true way to birth general intelligence. For instance, If you lack some mental power like deductive reasoning, another agent might exploit the reality to its advantage to out-compete you for resources. If you don’t know how to socialize with another group of similar individuals, then you will be an outcast.  -->
@@ -118,9 +138,7 @@ But replicating the evolution of intelligent life will be more complicated than 
 
 Ken Stanley’s "Why Greatness can be Planned" is an excellent treastie on the tension between open-endedness and direct goal optimization. He argues that hat sometimes, in order to achieve a difficult goal, you must optimize for something else indirectly. Being single-mindedly focused on a specific objective often results in greedy optimization, where spending time doing anything else takes you away from the local minima. Paradoxically, approaches that try to visit *everywhere* in the space of outcomes can lead to other goals and unintentionally useful outcomes. One example brought up in the book is the invention of vacuum tube transistors - they were originally invented for studying electricity, but re-purposed for the invention of computers. If humanity was single-mindedly focused on building computing engines, they may not have found the time to work on other problems that would have discovered the vacuum tube.
 
-Taking inspiration from this principle of "open-ended search", we want to assemble all manner of diverse, interesting capabilities, and re-purpose interesting behaviors to solve hard intelligence problems. Jungle Basketball is the "side quest" (albeit a hard one!) that helps us find interesting behaviors. It's likely that optimizing Jungle Basketball will produce agents that are not particularly good at basketball, but quite useful for some other task. Vice versa, when we later extend Jungle Football to tackle other problems, it's possible that we'll accidentally discover a good basketball player.
-
-
+Taking inspiration from this principle of "open-ended search", we want to assemble all manner of diverse, interesting capabilities, and re-purpose interesting behaviors to solve hard intelligence problems. Jungle Basketball is the "side quest" (albeit a hard one!) that helps us find interesting behaviors. It's likely that optimizing Jungle Basketball will produce agents that are not particularly good at basketball, but quite useful for some other task. Conversely, when we later extend Jungle Football to tackle other problems, it's possible that we'll accidentally discover a good basketball player in the process of solving for a different task. It is for this reason that the evolution of agents should span a diverse range of environmental conditions and behavioral adaptations, so that the chances of something being re-purposed for another advantageous trait is maximized.
 
 We will refine these ideas as we train more and more complex agents and introduce human-in-the-loop RL in [chapter 11](chapter11.html).
 

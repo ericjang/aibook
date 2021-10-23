@@ -47,8 +47,6 @@ In retrospect, it is not surprising at all that making as few assumptions as pos
 
 This was somewhat of a controversial essay, as many scientists felt that it was a reductive take to have their intellectual pursuits and “novel algorithms” reduced to “riding the wave of faster computer chips and more data”. As Rich points out, it is indeed a bitter pill to swallow. No one - whether a factory worker or a radiologist or an AI scientist - relishes the feeling of being replaced by “dumb” computer automation!
 
-<TODO, need a transition here>
-
 I’d like to highlight some of the domains where machine learning breakthroughs have been particularly impactful and captured the imagination of the public. 
 
 Transmuting Between Compute and Data -> Superhuman Gameplay
@@ -69,9 +67,9 @@ Therefore, by having AI agents play against itself over and over again (a scheme
 
 Since then, DeepMind researchers have found ways to even further reduce biases of AlphaGo, by replacing the hard-coded Software 1.0 parts with more compute and data (transmuted from compute). 
 
-The Silicon-Valley billionaire-backed startup OpenAI leveraged that idea - transmuting compute into data - to tackle another challenging game, Dota. <TODO: describe the result of the game>.  - partially observable fog of war, requirign agents to exhibit memory, cooperate between agents.
+The Silicon-Valley billionaire-backed startup OpenAI leveraged that idea - transmuting compute into data - to tackle another challenging game, Dota. <!-- <TODO: describe the result of the game>.  - partially observable fog of war, requirign agents to exhibit memory, cooperate between agents. -->
 
-UT Austin, led by work by Noam Brown,  has <describe Pluribus? , Hanabi - games that were previously thought to require human intuition and psychology>.
+UT Austin, led by work by Noam Brown,  has describe Pluribus? , Hanabi - games that were previously thought to require human intuition and psychology.
 
 Once again: search is turning compute into data. A neural network can turn data into compute.
 
@@ -82,19 +80,17 @@ AI is a mirror that continues to teach us many things about our own intelligence
 Waymo Self-Driving Car Approach - waymo has a “cone guy” - person who is responsible for cone detection
 George Hotz has a quote “if you were starting a chess engine company, would you hire a bishop guy?”
 
+# Scaling is All You Need
+
+<!-- large models even appear to be less sensitive to catastrophic forgetting https://openreview.net/forum?id=GhVS8_yPeEa -->
 
 Scaling Laws for Large Language Models
 
 OpenAI’s research agenda more or less aligns with the Bitter Lesson. They bet heavily on scaling up deep learning methods, and published a very interesting paper in 2020 where they showed that 
 
-<scaling laws plot>
-
 GPT-3, T5, GShard, Switch-C
 
-ML is also elegant solution: blue is old google translate codebase (500k LOC). 
-The GNMT system is only ~500 lines of TensorFlow code, trained on massive amounts of data.
-Commercial breakthroughs in automatic translation have unlocked trillions of dollars in global trade that would otherwise not have happened.
-The economic benefits of machine translation - increased international trade by 10%, allowing people to collaborate across country borders. https://twitter.com/emollick/status/1310249212593012737?s=20
+
 Advances in Reinforcement Learning research have shown us that we can get an agent to produce physical behaviors like walking or grasping or game playing. If an agent can reproduce physical behaviors, why shouldn't they be able to produce mental behaviors, like “thinking”, “remembering”, and “learning”? 
 If we have data that relates sensory observations with the act of performing such mental activities, it should be possible to learn the mental functions themselves. 
 The process of “optimizing a system to learn well” is also described as the “meta-learning” problem. It turns out that this bi-level problem is surprisingly general, and can often
@@ -183,6 +179,18 @@ The smartphone revolution resulted in many more digital photos being taken and u
 In the next chapter, we will leave the green pastures of applied AI and ML breakthroughs of the last decade and reckon with the challenges that face us today in pushing to true AGI.
 
 
+## Reinforcement Learning
+
+There are two kinds of reinforcement learning. 
+
+The first one is based on gradient descent: 
+
+the second is based on a principle of "approximate dynamic programming". 
+
+basketball Metaphor  - first you learn how to score the ball in the basket from one foot away from the basket. Then you take one step back and do the same thing, only a little farther. And you keep going until you are shooting from the 3-point line. 
+
+
+
 
 Summary
 Neural networks are function approximators whose success, like any ML method, are dependent on a tradeoff between assumptions and data.
@@ -216,7 +224,7 @@ Here is an example of “dynamic programming” via a cooking analogy: if you st
 
 People typically regard training neural networks as a slow process, but dynamic programming actually shows up in all sorts of places when it comes to training neural networks. 
 
-Across parameters during a training step. Consider a stack of “layers'' in a neural network. The cost to update the weights of the neural network scales linearly with the depth of the network, but adding a layer’s worth of parameters exponentially increases the complexity of the function we can represent <TODO, need reference>
+Across parameters during a training step. Consider a stack of “layers'' in a neural network. The cost to update the weights of the neural network scales linearly with the depth of the network, but adding a layer’s worth of parameters exponentially increases the complexity of the function we can represent
 
 Across batches during a training run. When you train on one batch, it improves feature representations for predicting the next batch, and optimizing on that batch helps improve the performance on the next batch, and so on. There is no need to simultaneously optimize all batches of data at once, because we often learn redundant things across minibatches. This effect becomes even more pronounced in deep reinforcement learning. 
 
@@ -239,7 +247,12 @@ A neural network becomes more capable as you present it with more data and param
 
 This process by which an ML model acquires knowledge from the training examples is colloquially called “learning”. Obviously this biologically-inspired terminology misses out on a lot of nuance of what actual biological learning is like 
 
-A Unified Language
+# A Unified Language
+
+ML is also elegant solution: blue is old google translate codebase (500k LOC). 
+The GNMT system is only ~500 lines of TensorFlow code, trained on massive amounts of data.
+Commercial breakthroughs in automatic translation have unlocked trillions of dollars in global trade that would otherwise not have happened.
+The economic benefits of machine translation - [increased international trade by 10%](https://twitter.com/emollick/status/1310249212593012737?s=20), allowing people to collaborate across country borders.
 
 The greatest boon of neural networks is that it is a remarkably simple language to speak. I remember training my first neural network without a deep understanding of the math behind it, and yet I was able to intuitively understand that the model was “learning to predict from data”. 
 
@@ -254,8 +267,8 @@ You can approach neural networks from the mindset of an optimization person, or 
 
 You don’t need to learn about maximum likelihood estimation, the difference between parametric and nonparametric models.
 
-<differentiable neural architecture search making bi-level optimization a linear-time problem instead of a quadratic cost>
-
+<!-- <differentiable neural architecture search making bi-level optimization a linear-time problem instead of a quadratic cost>
+ -->
 Smart and technically-minded people often underestimate the importance of easy-to-use tools (and the people who prefer such tools), instead preferring to create “mathematically elegant” or “logically consistent” systems.  This theme occurs over and over again, even at places like Google Research where people willfully resist the Bitter Lesson and attempt to design ever-complicated priors.
 
 Deep Learning is accessible. You don’t need a strong mathematical foundation anymore to train neural networks. Just concatenate some layers, gather some data, and your robot supports a new end-effector! 

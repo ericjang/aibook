@@ -1,9 +1,14 @@
 ---
 chapter-number: 7
-title: We are Meat Shields
+title: What is Death?
 link-citations: true
 reference-section-title: References
 ---
+
+<!-- open up with definition of autonomous dynamical system vs. non-autonomous dynamical system -->
+
+
+<!-- TODO: merge this with neurobiological software stack chapter? -->
 
 Given that Life’s pursuit of survival is the only process that has created general intelligence to date, it is tempting to suggest that we can achieve AGI by simulating evolution until it produces an organism approaching human-level competency. That is the main approach that I, and many other researchers who came before me, propose we do in order to solve AGI.
 
@@ -15,6 +20,12 @@ However, this boundary for separating the living and the dead is incomplete - th
 
 Evolutionary biology tells us that life comes down to “selfish genes” - information that propagates itself independently of whether it exists in a “living” thing or not. A cell’s job is not actually to survive, but rather to serve as a  protective container for a bundle of genetic information. Much like a sturdy house, the cell handles a certain amount of oxidative abuse and solar radiation from the environment that would otherwise destroy the fragile genetic information inside. Moving up the food chain, multicellular organisms can be regarded as a stronger, more complex container for the same genetic information. These containers can perform more complex survival behaviors, such as specializing their cells to become sensors, actuators, or armor.
 
+what is doing the surviving? Even evolutionary biologists disagree. Richard Dawkin's will say that a chicken and an egg is merely a byproduct of Chicken DNA reproducing itself. While SJ Gould will say that selection happens at the phenotypic level - fitness can only be defined with respect to phenotypes. The middle ground is the "multi-level selection" view, where there is selection and cooperation and competition happening at all levels of abstraction: from genes to phenotypes to individuals to even cultures. It's all just information.
+
+
+
+<!-- there is a debate between Dawkin's selfish gene hypothesis: that selection happens at the gene level vs. Jay Gould who says that selection happens at phenotypic level -->
+
 A civilization is an even sturdier life-form -- one that protects individuals and their genetic information. But at the end of the day, all of these levels of biological complexity live in service of propagating genetic information. Society, humans, cells - all these are just meat shields.
 
 But if survival is about genetic information, then therein lies a puzzle: if a fish evolves into a man in order to protect its genetic information, who is doing the surviving - the fish or the man? Consider that the genetic code of a species is ever changing, happy to sexually recombine or mutate to achieve better fitness in its environment. Within a species, no two individuals have exactly the same genome. How do we reconcile this fact with the notion that “genetic information tries to survive”? The answer is that the species cooperates to protect shared genetic information.
@@ -23,6 +34,8 @@ This principle transcends species: a closed ecosystem (such as our biosphere) pe
 
 
 
+
+transcription factors themselves 
 
 Finally, no living organism can truly perform allostasis on their own; most living things depend on a complex web of other participating lifeforms to survive. Without other living things to continue the carbon and nitrogen cycles, life would quickly extinguish itself. Drop any animal onto the surface of Jupiter, and it will be as helpless as a virus sitting by itself in the midday sun.
 

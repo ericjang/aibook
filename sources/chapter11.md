@@ -1,19 +1,19 @@
 ---
 chapter-number: 11
-title: Open-Ended Search and Lifelong Learning
+title: Human-Guided Search and Lifelong Learning
 link-citations: true
 reference-section-title: References
 ---
 
-Games differ from life in a few important ways.
+In the previous chapter we set up a set of games with which agents can demonstrate sophisticated level of play. However, games differ from life in a few important ways.
 
-Ggames studied in reinforcement learning tend to be fairly short - a handful of moves on a chessboard, a deck of Poker cards running out after a few dozen turns. The average professional game of Magic the Gathering ends in 6.7 turns. 
+Ggames studied in reinforcement learning tend to be fairly short - a handful of moves on a chessboard, a deck of Poker cards running out after a few dozen turns. The average game of Magic the Gathering ends in 6.7 turns between skilled players. 
 
-Games start with a clearly defined reset state - for instance, shuffling the deck at the beginning of a poker game. For RL algorithms that learn to play games, this is an important detail because it allows us to visit the same states over and over again, allowing trial-and-error to figure out what actions tend to work best for that state. Even learning short games with reinforcement learning require resetting and repeating the game over thousands or even millions of episodes. The initial state of the game may be randomized from episode to episode, but it's done in a way that is independent of the past. Therefore, the distribution of "reset states" are "stationary".
+Games start with a clearly defined reset state - for instance, shuffling the deck at the beginning of a poker game. For RL algorithms that learn to play games, this is an important detail because it allows us to visit the same states over and over again, allowing repeated trial-and-error to figure out what actions tend to work best for that state. Even learning relatively short games with reinforcement learning require resetting and repeating the game over thousands or even millions of episodes. The initial state of the game may be randomized from episode to episode, but it's done in a way that is independent of the past. Therefore, the distribution of "reset states" are "stationary".
 
-In contrast, life is a game that never ends - even when an individual dies, they are but a chesspiece for their genes, which live on elsewhere. Even when humanity goes extinct, parts of the human genome will keep playing. It's chesspieces all the way down.
+In contrast, life is a game that never ends - even when an individual dies, they are but a chesspiece for their genes, which individually live on in their descendants and distant relatives. Even when all of humanity goes extinct, parts of the human genome will keep playing in other organisms. It's chesspieces all the way down.
 
-Most RL tasks today are like building sand castles at the beach. The environment is reset to a flat pile of beach sand each morning, and no matter how glorious the sand castle you build, the castle is washed away by the tide by the next morning, leaving more or less the exact same starting conditions. In most RL setups, the only thing that is “persisted” between episodes are the updated agent parameters: everything else stays fixed. Such games are relatively easy to learn, and the optimization objective takes place with respect to a fixed initialization and dynamics. The complexity of the world is bounded by what you can build in a day, and nothing more.
+Most RL tasks today are like building sand castles at the beach. The environment is reset to a flat pile of beach sand each morning, and no matter how glorious the sand castle you build, the castle is washed away by the tide by the next morning, leaving more or less the exact same starting conditions. In most RL environments, the only thing that is “persisted” between episodes are the updated agent parameters: everything else stays fixed. Such games are relatively easy to learn, and the optimization objective takes place with respect to a fixed initialization and dynamics. The agent accumulates knowledge over the course of many episodes, but the complexity of the world is bounded by what you can build in a day, and nothing more.
 
 Now imagine if there was no tide and no resets - the sandcastle you built one day would be waiting for you the next. You could keep extending it, building a sand kingdom without limit. You might even leave behind instructions to your children on how to build sandcastles. A lot more would be possible if the tide didn't reset your castle-building endeavours every day. Most land animals experience this - our shelters and tools and books persist across time, even though the sun rises each day. The real world has no "resets" - it does not wipe the slate clean, nor are the same starting conditions ever visited. This makes the world substantially richer.
 
@@ -68,6 +68,59 @@ This will interact nicely with the principle of "stepping stones" - qualitative 
 
 [^sidenote2]:
 	A technical challenge that arises in the Agent Zoo is that as organisms develop longer lifespans and learns to do many different behaviors, evaluating it quickly and holistically is not possible in the span of a few minutes. 
+
+<!-- talk about how zookeeper will save a lot of compute -->
+
+## Jungle Games
+
+Jungle Basketball is a form of a children's game, with considerably more emergent complexity and higher stakes.
+
+With the addition of human-in-the-loop creation, we can now tackle the 
+
+meta-learning question: does training for survival (e.g. learning to play jungle basketball) make playing other children's games easier? Or does playing children's games prepare one to play the high-stakes game of jungle basketball?
+
+Is "play" just behavior with low-stakes environments that encourage agents to acquire complex skills that would later serve them in high stakes situations?
+
+Selecting for good behavior in high stakes situations is akin to selecting agents using life and death, while play with low stakes is merely done for the purpose of fun and empowerment (for later "actual" game of life)
+
+Labs like DeepMind study suites of games as a testbed for measuring intelligence. The agents are clearly embodied, but lack a unified semantics of death and survival.
+
+We can make them possibly deadly.
+Following that playbook, might we 
+
+
+<!--introduce a variety of children's games from various cultures (the koreanshow Squid Game shows how even simple games can be taken to deeper levels of play when the stakes are raised) -->
+
+hop scotch
+tag
+freeze tag
+monkey in the middle
+hide and seek
+duck duck goose
+tug of war
+
+Korean 
+ddakji
+
+
+
+
+
+## Cellular Automata: From Autonomous Physics to Non-Autonomous Agency
+
+Cellular automata are dynamical systems with no "control" variable: they simply evolve according to their initial state. You might get something that looks like an agent, you might get something that looks like thermal noise.
+
+Having emergent behavior come out of training agents is hard; having emergent *agency* come out of a simulation with no hard-coded representation of an agent is even harder. However, getting agency to emerge out of an automomous simulation is a key component of understanding the line between "non-living" and "living".
+
+
+Many researchers have tried to formalize and codify computational metrics of "agency", "interestingness", and "diversity", with the hopes that they can optimize the metric directly. I am uncertain if these efforts will work, because humans have preconceived notions of what we find interesting. It's not clear that optimizing for a formal definition of interestingness will be well-aligned with the other two metrics.
+
+Instead, why not do the naive, Software 2.0 thing and simply gather a large dataset that allows us to predict whether something is interesting or not?
+
+<!-- human labeling can serve as a "mock", or a "stand-in" for a function we don't know how to implement exactly. It might not be perfect, but it is good enough and frees us up to study the more interesting questions that follow, while others work on the principled approach to answering the lower-level questions-->
+
+
+<!-- digram of a neural net architecture that predicts three ranking classifiers: interestingness, diversity, agency -->
 
 
 

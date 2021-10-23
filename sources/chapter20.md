@@ -1,29 +1,52 @@
 ---
 chapter-number: 20
-title: Re-thinking Companionship
+title: Rethinking War
 link-citations: true
 reference-section-title: References
 ---
 
+"If Russia or China invaded Poland tomorrow, and Poland asked you to contribute your knowledge of AI and robotics to help defend them, would you do it?"
 
-The brain rewards people based on whether they are performing their evolutionary duties - many life endeavours are hijacking that center and tricking the brain into thinking that it’s doing something worthwhile / productive for society / their community.
-
-
-the ethical qualities of systems are pass-thru to its creators. someday if we create AGI children, maybe we are no longer ethically responsible for all of its actions, in the same way that parents are not entirely responsible for the actions of their children. But as to a specific definition of ethics, everyone has different standards.answer varies across cultures and time periods'
+I asked my Polish colleague, Karol Hausman, while we were chit-chatting around the water cooler at work.
 
 
+<!-- spur some kind of civil war -->
 
 
-<discuss dogs and dating here>
+Many AI researchers are anti-war. 
 
-Interesting ideas on here: 
-https://jacobitemag.com/2018/04/24/uncanny-vulvas/
+Many of my colleagues find the idea of discussing ML technology in war revolting, to the poin
+
+I think this is dangerous because it leads to a reductive understanding of the technology - 
+
+in progressive circles we endlessly point to how AI technology can reinforce social inequalities, and execute brown people in the middle east conflicts.
+
+It's easy to be anti-war in times of peace, when your home country looks like a colonizer subjugating less powerful countries.
+
+But what if a foreign power is flexing its muscles, doing things that don't align with your basic moral values that transcend citizenship?
 
 
-Sex Robots - the physical aspects
 
-The emotional and sexual experience of being desired 
-To some extent, the emotional experience of being desired , dependent on is what makes having a dog enjoyable as well
+For instance, mass surveillance of citizenships is objectionable.
 
 
-Much of human history and society are byproducts of a elaborate mating ritual
+## Latency War
+
+A General Atomics MQ-9 Reaper drone, often deployed by the United States of America and her friends to rain death and "liberty" upon their enemies, has a round-trip communication latency of 2.4 seconds. This is the time it takes for an image to be transmitted, sent over satellite to a military base, for a pilot to make a decision, and then for the command to return to the drone. 
+
+This means that in the future, where everyone has a drone made by USA or Turkey or China, wars are fought and won in the span of about 2.4 seconds.
+
+An autonomous system that can execute a critical decision in that time frame 
+
+https://archive.is/AxHNH#selection-1851.9-1855.3
+
+The mossad remote controlled sniper robot had latency of 1.6 seconds
+
+I studied quite a bit of remote teleoperation of Mobile Manipulators at Google and can tell you that the latency of about 200 milliseconds means a whole world of difference. 
+
+Obviously, whoever is physiically closer to the drone they are piloting will have shorter latencies, and be able to react much faster.
+
+<!-- https://en.wikipedia.org/wiki/General_Atomics_MQ-9_Reaper -->
+
+<!-- reach out to balajis and ask for review on this chapter -->
+<!-- https://twitter.com/balajis/status/1395886509509599233?s=20 -->
