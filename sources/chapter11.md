@@ -38,7 +38,14 @@ Yes, new agents can potentially be initialized with the memories and knowledge o
 
 If we want to simulate longer lifetimes, we will need to depart from an episodic learning framework, and merely let agents evolve in a non-episodic way in an never-ending simulation. Agents that are already capable of survival from playing jungle basketball will continue to maintain their survival, and potentially ability to play the basketball game becomes vestigial (since playing the game successfully does not always improve their survival). 
 
+<!-- Furthermore, we will have to rethink our architecture for modeling sequential agent behavior.  -->
+
 It's optimistic to assume that agents capable of basic survival will be able to perform learning behaviors and adapt themselves continuously to get better and better at survival. Absent a search algorithm (RL or an evolutionary fitness criteria), so it's very possible that the resulting simulation just settles into some kind of lukewarm equilibrium - agents moving around aimlessly, shuffling the ball around, doing OK at survival and some adaptation but not inventing new behaviors wholesale.
+
+# Data Management and Annotation
+
+
+
 
 # Zookeeper
 
@@ -99,8 +106,8 @@ hide and seek
 duck duck goose
 tug of war
 
-Korean 
-ddakji
+
+ddakji, 
 
 
 

@@ -5,6 +5,8 @@ link-citations: true
 reference-section-title: References
 ---
 
+<!-- TODO: need to define agent as a an abstract decision-making system. In machine learning, we often also describe the agent having the ability to *learn*, though this is somewhat optional if the agent is already perfectly specified from the get-go. The agent can be programmed by a human, or programmed via a neural network (software 2.0). -->
+
 *A human being should be able to change a diaper, plan an invasion, butcher a hog, conn a ship, design a building, write a sonnet, balance accounts, build a wall, set a bone, comfort the dying, take orders, give orders, cooperate, act alone, solve equations, analyse a new problem, pitch manure, program a computer, cook a tasty meal, fight efficiently, die gallantly. Specialization is for insects.*
  —Robert Heinlein, Time Enough for Love
 
@@ -82,7 +84,7 @@ In trying to widen our narrow AI methods into more general ones, researchers hav
 - Commonsense reasoning
 - Multi-domain learning
 - Bayesian decision making
-- natural language understanding
+- natural language understanding 
 - Models of physics
 - Intuitive psychology 
 - Self-awareness
@@ -101,6 +103,11 @@ Each of these abilities can be thought of as a "sub-routine" that, when executed
 Solving the "integration problem" is tricky because the sub-routines ought to interact closely with each other synergistically. For example, memory obviously aids learning from experience. When we sleep at night, our brain replays memories to us - jumbled together in the form of a limited consciousness experiencing dreams. Dreaming is thought to be important to the learning process. But if these pieces are dependencies of each other, how do we approximate these functions separately? Is Common sense reasoning an individual module that knows a lot of facts, or an operating-system piece that talks to other modules and builds a cohesive world-view? How does that knowledge get transmitted to other modules? Does it even make sense to impose a hierarchical control scheme where the “operating system” asks various pieces (curiosity, planning, etc) to perform their specialized function, like a conductor at an orchestra? Or is it just a cacophony of neural regions, like a jazz band where nobody is really “in charge” but the whole thing works out anyway?  
 
 
+Jeff Clune has often pointed out in his talks about AI-GAs (AI-Generating Algorithms) that it's not clear how you put these pieces together. We must *go meta*, by discovering these capabilities from scratch rather than prescribing a system for it.
+
+
+
+
 <!-- Even if we had all the individual pieces of Moravec’s landscape above, there’s still the challenge of how all these “intelligence” applications coordinate with each other to realize a system that can borrow 
 The process of executing some application, we receive a stream of information. 
  -->
@@ -115,8 +122,6 @@ Absorbing a vast amount of knowledge in the world seems to be a critical ingredi
 How can we imbue our AI systems with more “common sense”? A radiologist’s learned experience and human judgement comes from far more than the X-Rays she’s studied. She had a childhood and learned common sense knowledge and a variety of other important medical knowledge in school. Perhaps we can show our AI radiologist images of trees and frogs and everything else under the sky, so that it understands when we are accidentally giving it non-MRI images.
 
 The more we show our models about the world at large, the better they are at understanding the world outside of the immediate task at hand, and the fundamental principles that underly our reality.
-
-
 
 Enormous language models trained on Internet data can capture a surprising amount of commonsense knowledge. I asked such a model to perform a spatial reasoning task, and it generated a surprisingly coherent reply:
 
@@ -183,9 +188,6 @@ Maybe, once we look at a lot of environments / lots of tasks, the contribution o
 
 its not meaningful to ask what a gene does, you can only ask what a gene does in context of its environment (e.g. testosterone does not cause aggression, it merely amplifies aggression responses) . one implication of this is that maybe we are not assessing our learning algorithms in the right way -we have to study them in the context of the environment they are evaluated on.
 
-
-
- 
 Some luminaries in the field 
 Summarizing some views:
 Jeff Hawkins - scaling up a simple algorithm (not neural networks and backprop though) should build AGI, and all you need is the neocortex. 

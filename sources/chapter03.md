@@ -76,6 +76,19 @@ Having less transparency on how ML models come to make the decisions they do is,
 
 <!-- By taking those assumptions away, we have lost the ability to exert control over the complex, parallel computations now being made by function approximators. -->
 
+When a jury declares a criminal guilty of murder, it is because they are convinced he, through deliberated malice, caused someone's death. 
+
+But reality is multi-causal: he commited the crime because of the way he was brought up, because of his genes, because the wrong people happened to be in the wrong place at the exact same time (e.g. the murder and the victim).
+
+
+All of these issues with deep learning can be fixed - for any given problem there is probably a paper published in the last 5 years offering up some kind of promising algorithmic solution. 
+
+
+But it's still helpful to point out a relatively wide set of "failure modes" for which we are "asking a bit too much" for current machine learning models.
+
+Critics and even pioneers of Deep Learning are quick to point out the fundamental limitations of many of today's machine learning methods, but the community is also just as quick to point out all the ideas and papers exploring ways to patch over limitations of ML algorithms.
+
+
 
 Similar to how we try to summarize the intricate computations of fluid dynamics into a simple explanation of why planes fly, we find that any intermediate, non-technical explanation sort of falls short, does not capture the whole picture, is [a leaky, approximally causal abstraction](https://www.scientificamerican.com/article/no-one-can-explain-why-planes-stay-in-the-air/)
 
@@ -222,8 +235,6 @@ what would the operating system look like?
 
 
 I am concerned with creating 2.0 systems, because I am not particularly interested in AI that understands itself so well it can design itself. I
-
-
 
 
 You can build a model that exhibits knowledge of the world - by asking it to fill in the blanks to written text, by asking it to fill in pixels, by asking it to predict what a human would do. But in service of what? There is nothing that forces the model to be internally consistent 

@@ -11,8 +11,6 @@ How do we make AI "nice"? Academics love to use formal definitions like "value a
 
 Perhaps we don't need to overthink it, and once we have a model that understands enough commands to generalize to novel instructions, we can simply ask it to emit a policy that is "nice".
 
-
-
 <chapter: talk about play and childlike behavior and animal play?>
 <!-- this chapter needs substantialw work in fleshing out a more cohesive outline, as does 13-16-->
 
@@ -20,7 +18,6 @@ Could humans even contemplate their own uniqueness nature of intelligence if the
 
 
 ## Spontaneous Generation of Play
-
 
 How are  children so capable of synthesizing the ability to pretend the floor is lava?
 

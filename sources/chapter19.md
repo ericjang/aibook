@@ -8,11 +8,48 @@ reference-section-title: References
 “The question is not, Can they reason?, nor Can they talk? but, Can they suffer?”
 Jeremy Bentham
 
+
+# Educational Holocrons
+
+AI technology has the potential to change learning itself.
+
+everyone can have a personal english teacher
+
+
+
+
+What one considers “Knowledge” is a profoundly altered by personal, political, and spiritual beliefs. There are two strategies here - one is to learn all knowledge, and serve knowledge contextualized on a person’s beliefs and worldviews. It requires almost a complete understanding of how a human thinks. 
+
+Alternatively, we can imbue an ASI with agency and have its knowledge be dependent on its own personal, political, and spiritual beliefs.
+
+<TODO : merge this into the section on religion?>
+
+would Google Assistant be able to comment on any matters of history? what should it think of Christopher Columbus ? Hitler?
+
+Even a non-controversial question like “what is the color of a rose” has variable depth to it.
+
+A child would say something like “red” or “pink”, a slightly more educated person might say “yellow, white, depends”, an artist might refer to its color by some international ISO standard code, and an optics person might tell you that color is a subjective perceptual quantity that has no grounding in reality, and a rose merely poses a certain geometric microstructure that reflects light in a specific way.
+
+Maybe when discussing information, AI models could attempt to deliver a personalized interpretation of facts.  e.g. “An impersonation of Bernie Sanders would say X” or "the average progressive would say X about prison reform".
+
+Which shifts the blame to the person’s data and does not attempt to reflect a universal source of knowledge.
+
+
+
+
+you can imagine
+software should make future software easier to write, instead of adding complexity.
+
+
+Living in a post-truth world - what does this mean for AI which are supposed to embody knowledge. Whose knowledge do you embody? These are tricky questions indeed.
+
+
+
 1789
 
 Simulating evolution and getting animals to specialize to specific niches can help us study biological rules. Why do animals tend to get larger in colder climates?
 
-Why do animals get mor
+
 
 
 Study animal behavior in their natural environment, rather than that of a lab.
@@ -45,10 +82,7 @@ Help us to improve our relationships.
 
 The trouble is, in the modern stressful age we live in, therapy is in high demand and most people cannot afford it. The average person does not see a therapist because it is prohibitively costly - on the order of $100/$300 per session! 
 
-However, therapy is an emotionally taxing job - many therapists struggle with leaving the emotional burden of their practice at work, and often have their own therapists
-
-
-
+However, therapy is an emotionally taxing job - many therapists struggle with leaving the emotional burden of their practice at work, and often have their own therapists to regulate their own mental health. 
 
 What would it take to build a ML model that can listen to your problems, help you understand why you feel the way you feel, and help problem solve strategies to become more happy and productive?
 
@@ -84,25 +118,6 @@ Much like how we have annual checkups with doctors for physical health, therapy 
 
 
 It could f empathetic assistant that serves the function of a performance coach and a therapist. 
-
-
-Living in a post-truth world - what does this mean for AI which are supposed to embody knowledge. Whose knowledge do you embody? These are tricky questions indeed.
-
-What one considers “Knowledge” is a profoundly altered by personal, political, and spiritual beliefs. There are two strategies here - one is to learn all knowledge, and serve knowledge contextualized on a person’s beliefs and worldviews. It requires almost a complete understanding of how a human thinks. 
-
-Alternatively, we can imbue an ASI with agency and have its knowledge be dependent on its own personal, political, and spiritual beliefs.
-
-<TODO : merge this into the section on religion?>
-
-would Google Assistant be able to comment on any matters of history? what should it think of Christopher Columbus ? Hitler?
-
-Even a non-controversial question like “what is the color of a rose” has variable depth to it.
-
-A child would say something like “red” or “pink”, a slightly more educated person might say “yellow, white, depends”, an artist might refer to its color by some international ISO standard code, and an optics person might tell you that color is a subjective perceptual quantity that has no grounding in reality, and a rose merely poses a certain geometric microstructure that reflects light in a specific way.
-
-My colleague Ben Poole suggested maybe language models could condition on who is stating the fact, e.g. “An impersonation of Bernie Sanders would say X”. Which shifts the blame to the person’s data and does not attempt to reflect a universal source of knowledge.
-
-
 
 1. What if an AI therapy bot tells a depressed person to kill themselves? How do you get a language model to obey confidentiality rules? How do you prevent it from memorizing and regurgitating someone's mental health conversation to another patient?
 

@@ -19,7 +19,6 @@ When a human talks to another human, they can use language which is fuzzy and am
 But when we communicate intent to computers, they do not know how to translate our intent into concrete action.
 
 
-
 There are a few camps to this observation:
 We should augment our Software 2.0 with more Software 1.0 structure so they generalize in predictable ways and are robust to invariances that we hard-code in.
 We should lean into even more Software 2.0 so it figures out the right invariances.

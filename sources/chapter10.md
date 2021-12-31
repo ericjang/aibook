@@ -9,6 +9,8 @@ reference-section-title: References
 
 *-- Sarah Cooper (via Twitter)*
 
+Chapter 9 establishes the basic "game transformer" architecture we will use to model a variety of Jungle Games and Jungle Agents. In this chapter we will broaden the set of social games played by Jungle Agents by introducing team games.
+
 In chapter 7 we discussed how "life" transcends the species, the individual, the cell, and yes, even DNA. Just as how there is no "spoon" in The Matrix, there isn't really a singular "building block of life" trying to optimize for its survival. Self-preserving patterns can be encoded in genes, in multi-cellular organisms, in behavior, and in societies.
 
 So how should we think about "cooperative behavior"? It is how two pieces of information work together to improve both their odds of preserving themselves. The information-synergy can be thought of as a new pattern that seeks to protect its unity. Cells in multicellular organisms, ants in a colony, and humans in a civilization all are examples of this. In this chapter we'll discuss how to extend Jungle Basketball to give rise to social behavior, and perhaps even phenomena resembling self-awareness. Culture is itself a sort of "information pattern" that preserves itself over time, and through the complex interactions between agents working together in teams, we may be able to start seeing this kind of behavior unfold.
@@ -87,8 +89,6 @@ A capability that might emerge from agents adapting to play these games is for a
 
 When a cooperating group of individuals acquires a resource, there is often a question of how to divide it amongst its members. 
 
-
-
 Rather than fighting over resources each time the group acquires it, the relative social rank between members can be used to settle disputes in a less costly way.
 
 Milestone 3 social animals are organized by dominance hierarchies, where the pecking order is not readily observed and animals must rely on more acute perception -- and memory -- of interactions. For example, assessing the social status of other individuals relative to one’s own, or remembering past interactions between individuals to judge ranking in the hierarchy. 
@@ -98,8 +98,6 @@ Milestone 3 social animals are organized by dominance hierarchies, where the pec
 Potentially agents can even solve puzzles and teach each other how to solve them - imitating by demonstration.
 
 we will now introduce the necessity for resources. Agents might have to gather and share food food, manage economy of resources in order  
-
-
 
 One challenge is that agents are not incentivized to survive or reproduce - they are incentivized to let their team win.
 

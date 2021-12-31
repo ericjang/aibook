@@ -7,6 +7,10 @@ reference-section-title: References
 
 So far we have discussed how implementing narrow intelligence is hard (chapter 3), implementing general intelligence is still harder (chapter 4), and having code that can handle the semantic precision of the physical world abounds with hidden, fractal-like complexity (chapter 5). How can we possibly imbue our AI systems with our preconceived notions of the world when we struggle to formalize the simplest of concepts, like hotdogs?
 
+
+<!-- a brief overview of the wonders of neuroscience, biology, and ecology, and the many creative and elegant ways in which life itself solved the thorny problems of semantics and multi-task integration with a simple, unifying constraint: survival. Intelligence does not exist on its own; a nervous system’s design only becomes meaningful in the context of its ecological environment. -->
+
+
 The entire endeavour almost seems hopeless, until we remember that Nature and its creations have somehow managed to solve these problems of semantic understanding long before human minds could even contemplate the abstract nature of intelligence. 
 
 The answer to the integration question is to think about all the aforementioned “general capabilities” as not individual capabilities at all, but actually highly specific and necessary behavior for solving a single - survival. Perhaps “curiosity”, “empathy” are just a word for a certain kind of behavior that an animal exhibits in certain situations, when it serves the animal well.
@@ -23,6 +27,12 @@ The Neurobiological Stack encompasses not only how reactive behaviors are formed
 ## Behavior 
 
 At the instant of observation, we see an animal's behavior.
+
+The goal of this chapter is not to recommend that we implement Piaget's developmental stages or hormone signalling in our agents, but rather to appreciate the complexity of the problem that nature solves and its particular set of solutions.
+
+Notably, there are not only regulating external motor behavior, but also internal ones like blood flow, insulin expression, switching genes on and off in response to environmental stimuli.
+
+
 
 ## Piaget's Stages of Child Development
 

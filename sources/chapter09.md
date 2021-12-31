@@ -1,6 +1,6 @@
 ---
 chapter-number: 9
-title: Jungle Basketball
+title: Jungle Games
 link-citations: true
 reference-section-title: References
 ---
@@ -21,8 +21,7 @@ Rather than designing an intelligent system, we will accept that complex ecologi
 craft ecological niches that demand the development of increasingly intelligent behavior and let evolution run its course.  
  -->
 
-
-# Why Games?
+# Step 1: Jungle Games
 
 The first piece of the ASI engineering roadmap is to build a rich set of video games where life and death is an element of gameplay. 
 
@@ -35,12 +34,16 @@ Obviously playing games are not the end-all be-all to creating general intellige
 3. Computer games can be simulated in faster-than-real-time, and be re-started over and over again, like resetting a time machine, so we can revisit points in history where different choices would lead to different outcomes. This makes evaluation much cheaper, especially when it comes to determining whether a result is statistically significant.
 4. Games are also fun for humans to play and watch. The entire nation of South Korea was riveted to the televised matches of AlphaGo vs. Lee Sedol in 2016. There’s something terrifying and inspiring about a human prodigy being outsmarted by a sphinx-like machine: inscrutable yet seemingly all-knowing. As ASI researchers, we will be spending a lot of time watching our creations. Evaluating intelligent systems is hard, so being able to compete with human-level intelligence gives us a visceral, qualitative sense of how smart the agent is. Later on, I want to leverage human-in-the-loop intelligence to supervise, discover and influence the arc of evolution, so it's important that humans are entertained when watching the agents in their native environment. 
 
+<!-- 
+Games provide a platform to inject human semantics and subjective understanding into the model, which we will leverage in Chapter 11.
+ -->
+<!-- The popular 2021 Netflix TV Show "Squid Game" features a series of contestants playing children's games with a mortal twist -  -->
+
+building a large distribution of children's playground games could be good substrates for developing a good mix of general capabilities, and potentially even meta-ability for playing games in a few-shot way. Running/maze solving just doesn't require enough intelligence
 
 If you die while playing hopscotch, you can't win hopscotch.
 
-
-
-# Jungle Basketball
+We
 
 I call the first iteration of the ASI game “Jungle Basketball”. It is a simulated game of one-on-one basketball: two humanoids with arms and legs that move around a court and attempt to gain control of a ball that they toss into a hoop on their opponent’s side of the court.
 
@@ -124,6 +127,12 @@ Agents can win Jungle Basketball if the other agent dies. But what does it mean 
 Jungle Basketball does not feature an open-ended objective - to the contrary, a strict objective allows us to side-step the thorny questions of life and death and get agents to learn *something*. Plenty of interesting behaviors can emerge from training agents to optimize for simple objectives in complex environments, even if they don’t perfectly capture the ultimate, intelligence-giving constraint of biological survival. As we iterate on later versions of Jungle Basketball, we can make the environment more ecologically life-like later by bootstrapping on top of the existing agents we have.
 
 A computational approximation of “death” could be as simple as one agent experiencing too much external forces (e.g. from a fall or impact from another object), or depleting itself of energy so that it isn't able to win the game. In the initial version of Jungle Basketball, we will not consider the agent’s need for food or energy or sleep. Life is obviously a lot more complicated than avoiding blunt trauma, but in engineering, perfect is the enemy of the good.
+
+# Multi-Agent, Multi-Game Transformer
+
+TODO: add diagram of the Game Transformer : takes in a natural language specification of a game, natural language description of a particular agent's behaviors within that game, and then models a sequence of actions and behaviors of that agent.
+
+
 
 <!-- 
 An ASI system is bottom-up: building the simplest of bacterial intelligences and prioritizing ecological specialization rather than some measure of “raw intelligence”. I believe that competitive and cooperative survival of "living organisms" is the only true way to birth general intelligence. For instance, If you lack some mental power like deductive reasoning, another agent might exploit the reality to its advantage to out-compete you for resources. If you don’t know how to socialize with another group of similar individuals, then you will be an outcast.  -->

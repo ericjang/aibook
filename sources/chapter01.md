@@ -7,6 +7,8 @@ reference-section-title: References
 
 This chapter explores how I came to 
 
+
+
 Artificial Intelligence, or A.I. for short, means so many different things to different audiences, that nearly every book on AI begins with the author's personal definition of it. Let me begin with my own. 
 
 Artificial Intelligence is a broad umbrella term for multiple scientific fields that study how intelligence works, combined with multiple engineering disciplines that seek to replicate those intelligent capabilities. Much like how "cancer researchers" have not yet cured cancer yet, "Artificial Intelligence" is a purely aspirational name - we still don't know how to build a machine with human-level intelligence, even though there have been many ideas proposed on how to build aspects of that intelligence.
@@ -53,7 +55,7 @@ Although the science I did at the time was probably full of errors and not groun
 
 It was a crazy time, and probably the hardest I've ever worked in my life. Everything since then has been relatively low-stress.
 
-
+In 2012, as a senior in high school, I began writing down "Strong AI Manifestos" on how we could build AGI - these were grandiose and yet imprecise outlines for what we needed. 
 
 
 <!-- My first exposure to robots and AI was when I was 6 years old during my Saturday morning cartoons, when I would watch *The Zeta Project*. The show was about an intelligent robot, nicknamed "Zee", that was originally built for assassinations but subsequently comes to realize the value of life and as a result, abandons his mission and becomes a fugitive on the run from his human creators. The show explored themes around robot sentience and rights, but as a 6 year old boy, I was far more excited about the arm lasers and robot spy battles. 
@@ -264,6 +266,23 @@ Around 6pm, I'll close my work laptop and fix dinner for myself, and work on one
 
 # Present Day
 
+
+<!-- talk about your decision to step away from robotics-something that you are deeply passionate about - to start over,
+
+re-thinking the research model from one of academia to one that is more tightly integrated with AI products.
+
+robotics often tries to 1) build the robot 2) have the robot leave the lab. 
+
+But what about doing the other way around, 1) having some software AI leave the lab, and then 2) embody it afterwards?
+
+
+
+why now? AI is leaving the lab, and it might be the case that you have to leave the 
+
+ focusing on the data and scaling purely in software.
+
+w
+-->
 
 
 <!--

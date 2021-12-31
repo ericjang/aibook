@@ -10,8 +10,12 @@ reference-section-title: References
 I asked my Polish colleague, Karol Hausman, while we were chit-chatting around the water cooler at work.
 
 
-<!-- spur some kind of civil war -->
+Wars are won on logistics - transporting resources, planning.
 
+The most powerful weapon for future wars will not be autonomous drones, but the mundane logistics planning
+
+
+<!-- spur some kind of civil war -->
 
 Many AI researchers are anti-war. 
 
@@ -29,12 +33,22 @@ But what if a foreign power is flexing its muscles, doing things that don't alig
 
 For instance, mass surveillance of citizenships is objectionable.
 
+## Self-preservation
+
+
+according to EA logic, assassinating critics would have a high positive expected return for society
+
+Maybe this kicks off a war for EA organization's self-preservation, where they rationalize that their continued existence is what will deliver salvation to all future generations.
+
 
 ## Latency War
 
 A General Atomics MQ-9 Reaper drone, often deployed by the United States of America and her friends to rain death and "liberty" upon their enemies, has a round-trip communication latency of 2.4 seconds. This is the time it takes for an image to be transmitted, sent over satellite to a military base, for a pilot to make a decision, and then for the command to return to the drone. 
 
-This means that in the future, where everyone has a drone made by USA or Turkey or China, wars are fought and won in the span of about 2.4 seconds.
+In the future, where everyone has a drone manufactured in the USA or Turkey or China, wars will be fought and won in the span of about 2.4 seconds. 
+
+What about the actual tactical stuff? Like in the western movies, tactical fights are won when you can see and shoot the enemy before they do the same to you. this means you either have to 1) evade detection 2) have low latency.
+
 
 An autonomous system that can execute a critical decision in that time frame 
 

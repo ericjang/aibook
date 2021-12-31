@@ -1,9 +1,22 @@
 ---
 chapter-number: 7
-title: What is Death?
+title: Implementing Death (and Life)
 link-citations: true
 reference-section-title: References
 ---
+
+
+
+## Is Embodiment Needed for Intelligence?
+
+Choosing decisions and observing their *consequences* of reality.
+
+An agent can choose to do nothing and stare at a wall all day, but 
+
+
+
+
+<!-- freud baby and breast - baby doesn't know the boundary between the breast and itself, good enough mother is one that doesn't attend immediately to baby's needs, but rather provides for the baby in a best-effort way, leaving the baby to contemplate occasionally why its immediate needs aren't being catered to. -->
 
 <!-- open up with definition of autonomous dynamical system vs. non-autonomous dynamical system -->
 

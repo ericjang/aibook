@@ -102,6 +102,9 @@ People do not share a common sense of values today that guarantees peace forever
  -the peace we have been enjoying is the exception rather than the norm. 
 
 
+inspecion - economy is basically moving things around and making them. need lots of things to inspect
+
+
 
 
 Large corporations as AI - tradeoff between data-driven learning and understanding when there is a regime change. 

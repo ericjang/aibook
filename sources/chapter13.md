@@ -7,8 +7,19 @@ reference-section-title: References
 *“A man is what he thinks about all day long."*
 *— Ralph Waldo Emerson*
 
+<!-- TODO: use the bolt-on generalization essay ?-->
 
-Previous chapters discussed how a single model can be language-conditioned to facilitate shared learning of different games and agent behaviors. We now consider how language can emerge not as a conditioning mechanism for the model, but as an action taken by the agents themselves.
+To imbue our agents with really profound levels of generalization, we may have to rely on the learned structure of "internet-scraped datasets"
+
+
+
+Previous chapters discussed how a single "game transformer" model can be language-conditioned to facilitate shared learning of different games and agent behaviors. We now consider how language can emerge not as a conditioning mechanism for the model, but as an action taken by the agents themselves.
+
+Language is *not enough* to convey meaning in a watertight way (see chapter 5), but coupled with the behavior of agents that share *understanding* through their behavior and implicit understanding of each other, language does facilitate "collaborative thinking" between individuals.
+
+
+
+
 
 What is the minimum complexity environment that would allow an agent to form hypotheticals about the world?
 
@@ -21,9 +32,8 @@ What is the minimum complexity environment that would allow an agent to form hyp
 
 meaning is discrete - Noam chomsky points out that you cannot have "half" a word, a word is a discrete unit of "meaning", whereas sound can be continuous.
 
-language is an efficient way to compress meaning.
+language is an efficient way to compress meaning. From an information-theoretic perspective, discrete codes are better for communicating information over noisy channels.
 
-Language is *not enough* to convey meaning in a watertight way (see chapter 5), but coupled with the behavior of agents that share *understanding* through their behavior and implicit understanding of each other, language does facilitate "collaborative thinking" between individuals.
 
 Cultural memory and stories serve to teach a social animals how to function, just as hippocampal memory teaches a squirrel where it buried its nuts. 
 
@@ -32,33 +42,29 @@ So far, we have focused on the neurobiological basis of behavior and how to set 
 
 # Neurobiological Basis of Behavior
 
+At 9 months of age , infants begin babbling and imitating the spoken sounds in their environment (mother tongue). 
 
-9 months of age , infants begin babbling and imitating the spoken sounds in their environment (mother tongue)
+We know that there are elements of the human brain that appear to be specialized for language. Language is the most lateralized thing, in addition to handedness - it happens on one side of the brain. Researchers have determined, via anesthatizing people's side of brains, 90\% of people have language lateralized to the left side of their brain
 
-is language 
-
-Many people with specific language impairments like Williams-Beuren syndrome also tend to have lower IQs, suggesting that language is not a distinct module in the cortex. However, this remains a controversial issue even among researcher.
-
-Language is the most lateralized thing, in addition to handedness - it happens on one side of the brain. Researchers have determined, via anesthatizing people's side of brains, 90\% of people have language lateralized to the left side of their brain
 
 three regions in cortex relevant
 broca's area (in parietal lobe). Bottommost part of cortex that moves body, specifically moving lips (language production, sign langauge production). 
 
 Broca's area being damaged is a "production aphasia"
 
-All animals think to some degree, in order to survive. But under what conditions would an animal spend all day thinking about something?
+
+On the other hand, Many people with specific language impairments like Williams-Beuren syndrome also tend to have lower IQs, suggesting that language is not a distinct module in the cortex, but rather interacts in complex ways with other "intelligence modules".
+However, this remains a controversial issue even among researcher.
 
 
+All animals think to some degree, in order to survive. But under what conditions and ecological nicehs would an animal spend all day thinking about something?
 
-For one, its immediate Maslovian needs have to be satiated - it can't be in imminent danger or have something urgent on its mind.
+For one, its immediate Maslovian needs have to be satiated - it can't be in imminent danger or have to make some urgent, time-sensitive action.
 
 As we scale up the Jungle Football game, to one that potentially lasts years in simulated time, we give our agents the capacity to think about 
 
 
-
-
 pre-training on large amounts of language imbues agents with basic "thinking" capacity. Can use this as a module for agents to "reason" about the world, as one would reason verbally.
-
 
 What would it take for agents to sit and think all day long? What compelled the first animal to do this?
 

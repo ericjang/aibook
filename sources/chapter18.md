@@ -5,6 +5,36 @@ link-citations: true
 reference-section-title: References
 ---
 
+<!-- TODO: make this section "how to deploy AI in businesses" -->
+
+There are two kinds of AI businesses:
+
+- ones that replace an existing process in business pipeline with a self-contained thing. This kind of business succeeds by talking to customers, iterating on customer feedback, and building something that customers want.
+
+- ones that re-design the entire value chain to the customer for a product that wasn't possible before. There isn't any process it is a drop-in replacement for, it is the first of its kind. 
+
+OpenAI + Github copilot might be an example
+
+AlphaGo / AlphaFold
+
+
+Rethinking Publishing
+
+
+Holocrons - instead of reading a book for knowledge, you converse with a simulacrum of the author, and engage in debates.
+
+
+- increasingly large pie for data labeling and data management
+- for label propagation to help with triaging vast amounts of data, coupled with anomaly detection software that flags if one cluster of data looks unlike another.
+- ML securiy machine learning securty - find holes / analyze public company's ML offering , understand what their model might be doing, look for potential PR disasters 
+
+
+
+
+AI technology will trickle its way down to content creation, for video editors who take a video of a neat object and have that object be automatcally transferred into a simulation, complete with articulation.
+
+
+
 I have always been envious of the high-tech, futuristic interfaces shown in iron man - nary a keyboard in sight, all computations done at a high level, with natural language conversing with the human user. 
 
 Our future of interacting with AI will change the interface between man and machine. Right now we use keyboard, screen, and mouse.

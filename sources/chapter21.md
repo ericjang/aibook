@@ -7,8 +7,13 @@ reference-section-title: References
 
 Much of human history and high-brow society are byproducts of a elaborate mating ritual. 
 
+Asimov's three laws state that "a robot shall not..."
 
+Sometimes people will ask me "is anyone working on this sort of thing". 
 
+the problem is that the question assuems that robots can even comprehend the meaning of these sentences.
+
+Robots can barely understand what a red stop sign means, and our models only are starting to understand language, so the question is putting the cart before the horse.
 
 
 
@@ -32,3 +37,10 @@ The emotional and sexual experience of being desired
 To some extent, the emotional experience of being desired , dependent on is what makes having a dog enjoyable as well
 
 
+We often talk about robots performing work for the elderly, 
+
+Human babies cannot survive on their own, and require constant care . This can make life especially tough for single parents, who often have to be the caregiver in the home and also make ends meet by working a job.
+
+
+
+What if robots could help provide 
